@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>特定商取引法に基づく表記 | 株式会社フォレスト</title>
+    <style>
+        /* リセットと基本設定 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Meiryo', sans-serif;
+            background-color: #f8f8f8;
+            color: #222;
+            line-height: 1.7;
+            padding: 30px 20px;
+        }
+
+        .container {
+            max-width: 820px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            padding: 40px 45px;
+            border-radius: 12px;
+            border: 1px solid #eaeaea;
+        }
+
+        h1 {
+            font-size: 26px;
+            text-align: center;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+            border-bottom: 3px solid #2c5f8a;
+            letter-spacing: 2px;
+            font-weight: 700;
+            color: #1a3a5c;
+        }
+
+        .section-block {
+            margin-bottom: 28px;
+        }
+
+        .section-title {
+            font-size: 17px;
+            font-weight: 700;
+            color: #1a3a5c;
+            background-color: #f0f4fa;
+            padding: 6px 14px;
+            border-radius: 20px;
+            display: inline-block;
+            margin-bottom: 8px;
+            letter-spacing: 0.5px;
+        }
+
+        .section-content {
+            padding-left: 6px;
+            margin-top: 4px;
+        }
+
+        .section-content p {
+            margin-bottom: 6px;
+        }
+
+        .label-item {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 6px 0;
+            border-bottom: 1px dashed #e0e6ed;
+        }
+
+        .label-item:last-child {
+            border-bottom: none;
+        }
+
+        .label-key {
+            font-weight: 600;
+            min-width: 140px;
+            color: #1f3b58;
+        }
+
+        .label-value {
+            flex: 1;
+            color: #222;
+        }
+
+        .sub-note {
+            font-size: 0.95rem;
+            color: #3d5a73;
+            background-color: #f9fbfd;
+            padding: 12px 16px;
+            border-left: 4px solid #8aa9c9;
+            border-radius: 4px;
+            margin: 12px 0 8px 0;
+        }
+
+        .risk-section {
+            background-color: #fafafc;
+            padding: 18px 20px;
+            border-radius: 10px;
+            margin: 10px 0 6px 0;
+            border: 1px solid #e9edf2;
+        }
+
+        .risk-section p {
+            margin-bottom: 8px;
+        }
+
+        .footer-note {
+            margin-top: 35px;
+            padding-top: 25px;
+            border-top: 2px solid #eaeef3;
+            text-align: center;
+            font-size: 0.95rem;
+        }
+
+        .footer-note .back-link {
+            display: inline-block;
+            margin-bottom: 15px;
+            color: #2c5f8a;
+            text-decoration: none;
+            font-weight: 600;
+            border: 1px solid #2c5f8a;
+            padding: 6px 28px;
+            border-radius: 30px;
+            transition: 0.2s;
+        }
+
+        .footer-note .back-link:hover {
+            background-color: #2c5f8a;
+            color: #fff;
+        }
+
+        .copyright {
+            font-size: 0.85rem;
+            color: #6f7d8c;
+            letter-spacing: 1px;
+            margin-top: 10px;
+        }
+
+        /* モバイル対応 */
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px 18px;
+            }
+
+            h1 {
+                font-size: 22px;
+            }
+
+            .label-item {
+                flex-direction: column;
+                padding: 10px 0;
+            }
+
+            .label-key {
+                min-width: auto;
+                margin-bottom: 2px;
+            }
+
+            .section-title {
+                font-size: 15px;
+            }
+
+            .risk-section {
+                padding: 14px 16px;
+            }
+        }
+
+        /* 問い合わせのメール表記調整 */
+        .email-hint {
+            font-size: 0.95rem;
+            background: #f4f7fa;
+            padding: 2px 10px;
+            border-radius: 16px;
+            display: inline-block;
+        }
+
+        /* 強み・特徴のカード風スタイル */
+        .feature-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 14px;
+            margin-top: 8px;
+        }
+
+        .feature-card {
+            background: #f8faff;
+            border-radius: 10px;
+            padding: 16px 18px;
+            border: 1px solid #e6edf5;
+        }
+
+        .feature-card strong {
+            display: block;
+            font-size: 1rem;
+            color: #1a3a5c;
+            margin-bottom: 4px;
+        }
+
+        .feature-card span {
+            font-size: 0.95rem;
+            color: #333;
+        }
+
+        @media (max-width: 600px) {
+            .feature-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* FAQ アコーディオン風 */
+        .faq-item {
+            border-bottom: 1px solid #e6edf5;
+            padding: 12px 0;
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+
+        .faq-q {
+            font-weight: 700;
+            color: #1a3a5c;
+            display: flex;
+            align-items: baseline;
+            gap: 8px;
+        }
+
+        .faq-q::before {
+            content: "Q.";
+            color: #2c5f8a;
+            font-weight: 800;
+            font-size: 1.1rem;
+        }
+
+        .faq-a {
+            padding-left: 30px;
+            color: #333;
+            margin-top: 2px;
+        }
+
+        .faq-a::before {
+            content: "A.";
+            color: #6f8aa8;
+            font-weight: 700;
+            margin-right: 8px;
+        }
+
+        /* CTAボタン */
+        .cta-area {
+            text-align: center;
+            background: #f0f6fe;
+            padding: 22px 20px;
+            border-radius: 12px;
+            margin: 8px 0 4px 0;
+            border: 1px solid #dbe3ef;
+        }
+
+        .cta-area .cta-btn {
+            display: inline-block;
+            background: #2c5f8a;
+            color: #fff;
+            font-weight: 700;
+            font-size: 1.1rem;
+            padding: 12px 48px;
+            border-radius: 40px;
+            text-decoration: none;
+            letter-spacing: 1px;
+            border: none;
+            transition: 0.25s;
+            box-shadow: 0 3px 12px rgba(44, 95, 138, 0.25);
+        }
+
+        .cta-area .cta-btn:hover {
+            background: #1a466a;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(44, 95, 138, 0.35);
+        }
+
+        .cta-area .cta-sub {
+            font-size: 0.9rem;
+            color: #4a5d72;
+            margin-top: 8px;
+        }
+
+        /* 実績バッジ */
+        .badge-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px 28px;
+            margin: 6px 0 2px 0;
+            justify-content: center;
+        }
+
+        .badge-item {
+            background: #f4f8fc;
+            padding: 4px 16px;
+            border-radius: 30px;
+            font-size: 0.9rem;
+            color: #1f3b58;
+            border: 1px solid #dce5ef;
+        }
+
+        .badge-item strong {
+            font-weight: 700;
+            color: #1a3a5c;
+        }
+
+        /* 小見出し補助 */
+        .mini-ttl {
+            font-weight: 700;
+            color: #1a3a5c;
+            margin-top: 6px;
+            margin-bottom: 2px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>特定商取引法に基づく表記</h1>
+
+        <!-- ====== 運営事業者情報 ====== -->
+        <div class="section-block">
+            <div class="section-title">運営事業者情報</div>
+            <div class="section-content">
+                <div class="label-item">
+                    <span class="label-key">主催運営</span>
+                    <span class="label-value">株式会社フォレスト</span>
+                </div>
+                <div class="label-item">
+                    <span class="label-key">運営責任者</span>
+                    <span class="label-value">加藤直樹</span>
+                </div>
+                <div class="label-item">
+                    <span class="label-key">所在地</span>
+                    <span class="label-value">サイタマケン, サカドシ, ヨッカイチバ, 214-1082</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- ====== 会社理念・特徴（新規） ====== -->
+        <div class="section-block">
+            <div class="section-title">株式会社フォレストの強み</div>
+            <div class="section-content">
+                <p style="margin-bottom:10px;">
+                    当社は「中小企業・個人事業主の持続的な成長を支援する」ことを使命に、<br />
+                    経営・補助金・助成金申請のプロフェッショナルチームとして活動しております。
+                </p>
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <strong>✓ 実績豊富なコンサルタント</strong>
+                        <span>これまでに1,200件以上の申請サポートを実施。経験に基づいた的確なアドバイスを提供します。</span>
+                    </div>
+                    <div class="feature-card">
+                        <strong>✓ 最新情報への迅速な対応</strong>
+                        <span>補助金・助成金は制度が頻繁に変わります。常に最新の動向をウォッチし、お客様に最適なプランをご提案。</span>
+                    </div>
+                    <div class="feature-card">
+                        <strong>✓ 無理な営業は一切いたしません</strong>
+                        <span>ご興味のある方にのみ、セミナー終了後に有料サービスのご案内をしております。安心してご参加ください。</span>
+                    </div>
+                    <div class="feature-card">
+                        <strong>✓ 創業・事業承継にも対応</strong>
+                        <span>創業予定の方、事業承継をご検討の方まで、幅広いフェーズに合わせたサポートが可能です。</span>
+                    </div>
+                </div>
+              
+            </div>
+        </div>
+
+        <!-- ====== お問い合わせ ====== -->
+        <div class="section-block">
+            <div class="section-title">お問い合わせ</div>
+            <div class="section-content">
+                <div class="label-item">
+                    <span class="label-key">メールアドレス</span>
+                    <span class="label-value">
+                        helpあっとbajp629d.site
+                        <span class="email-hint">（※「あっと」を@に置き換えてください）</span>
+                    </span>
+                </div>
+                <div class="label-item">
+                    <span class="label-key">電話番号</span>
+                    <span class="label-value">06-7231-5923</span>
+                </div>
+                <div class="label-item">
+                    <span class="label-key">受付時間</span>
+                    <span class="label-value">10:00～17:00（土日祝日・年末年始などを除く）</span>
+                </div>
+                <div class="label-item">
+                    <span class="label-key">対応言語</span>
+                    <span class="label-value">日本語（完全対応）／英語（要事前相談）</span>
+                </div>
+                <div class="sub-note" style="border-left-color:#5f8db0; background-color:#f6f9fc; margin-top:12px;">
+                    ✉ お問い合わせはメールまたは電話にて承っております。<br />
+                    お急ぎの方はお電話でのご連絡をおすすめいたします（受付時間内）。
+                </div>
+            </div>
+        </div>
+
+        <!-- ====== サービス概要・申込み ====== -->
+        <div class="section-block">
+            <div class="section-title">サービス概要・申込み</div>
+            <div class="section-content">
+                <div class="label-item">
+                    <span class="label-key">サービスの引き渡し方法</span>
+                    <span class="label-value">説明会参加者に対してご提供（オンライン／対面ハイブリッド）</span>
+                </div>
+                <div class="label-item">
+                    <span class="label-key">お支払い方法</span>
+                    <span class="label-value">説明会は無料です。有料サービスは銀行振込・クレジットカードに対応。</span>
+                </div>
+                <div class="label-item">
+                    <span class="label-key">表現、及び商品に関する注意書き</span>
+                    <span class="label-value">本商品に示された表現や再現性には個人差があり、必ずしも利益や効果を保証したものではございません。</span>
+                </div>
+                <div class="label-item">
+                    <span class="label-key">申し込み方法</span>
+                    <span class="label-value">申込フォームより（下記「お申し込みはこちら」ボタンから遷移）</span>
+                </div>
+                <div class="label-item">
+                    <span class="label-key">対象者</span>
+                    <span class="label-value">法人・事業主様、および創業予定の方（学生・個人の方は対象外となります）</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- ====== セミナー内容詳細（新規） ====== -->
+        <div class="section-block">
+            <div class="section-title">セミナーで得られるもの</div>
+            <div class="section-content">
+                <div class="sub-note" style="border-left-color:#4a8ab0; background-color:#f5faff;">
+                    <p style="font-weight:700; margin-bottom:4px;">📌 本セミナーでは以下のような内容をお届けします</p>
+                    <ul style="padding-left:20px; margin:4px 0 0 0;">
+                        <li>補助金・助成金の基礎知識と最新動向</li>
+                        <li>申請書類の書き方・ポイント</li>
+                        <li>事業計画書の作成サポート</li>
+                        <li>採択率を高める実践テクニック</li>
+                        <li>事例紹介（過去の成功事例・失敗事例）</li>
+                        <li>個別相談会（希望者のみ・別途日程調整）</li>
+                    </ul>
+                    <p style="margin-top:8px; font-size:0.95rem;">
+                        ※ セミナーは毎月第2・第4水曜日に開催。詳細は申込フォームよりご確認ください。
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- ====== リスク及び手数料について ====== -->
+        <div class="section-block">
+            <div class="section-title">リスク及び手数料について</div>
+            <div class="section-content risk-section">
+                <p>著者または講師と同じような利益が出ることを保証するものではありません。</p>
+                <p>補助金、助成金の内容は国の都合により予告なく変更され中止廃止されることがあります。補助金、助成金は所定方法による申請手続きがあり、内容によって不支給・減額などされる場合があります。</p>
+                <p>また、本セミナー終了後に希望者のみ有料サービスのご案内があります。法人・事業主様向け 月額費用 55,000円～ （税別）。</p>
+                <p>創業予定ではない方、法人や事業主でない方はご参加いただけません。</p>
+                <p>強引なご提案は一切行っていませんので、安心して参加いただけます。興味のある方にのみ説明会の最後にご提案いたしております。</p>
+                <p style="margin-top:10px; font-weight:600; color:#1a3a5c;">
+                    ⚠ ご不明な点は事前にお問い合わせください。納得いただいた上でのご参加をお願いしております。
+                </p>
+            </div>
+        </div>
+ 
+        <!-- ====== CTA（新規） ====== -->
+        <div class="section-block">
+            <div class="cta-area">
+                <a href="#" class="cta-btn">お申し込みはこちら</a>
+                <div class="cta-sub">
+                    ⏰ 定員になり次第締め切ります。お早めにお申し込みください。
+                </div>
+                <div style="font-size:0.85rem; color:#5a6f84; margin-top:6px;">
+                    ※ お申し込み後、確認メールを24時間以内にご連絡いたします。
+                </div>
+            </div>
+        </div>
+
+        <!-- ====== 個人情報について ====== -->
+        <div class="section-block">
+            <div class="section-title">個人情報について</div>
+            <div class="section-content">
+                <div class="sub-note" style="border-left-color: #5f8db0; background-color: #f6f9fc;">
+                    当社はお客様のプライバシーを第一に考え運営しております。お客様の個人情報は、厳正な管理の下で安全に蓄積・保管しております。当該個人情報は、お客様の同意を得た場合、法律によって要求された場合、あるいは当社の権利や財産を保護する必要が生じた場合を除き、第三者に提供する事はありません。
+                    <br /><br />
+                    個人情報の取扱いに関するお問い合わせは、上記「お問い合わせ」窓口までご連絡ください。
+                </div>
+            </div>
+        </div>
+
+        <!-- ====== フッター ====== -->
+        <div class="footer-note">
+            <a href="#" class="back-link">サイトに戻る</a>
+            <div class="copyright">Copyright © 株式会社フォレスト. All Rights Reserved.</div>
+        </div>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,1839 @@
+@charset "utf-8";
+/*
+
+/*
+━━━━━━━━━━━━━━━━━━━
+
+↓テキストスタイル
+
+━━━━━━━━━━━━━━━━━━━
+*/
+/* 基本テキストデコレーション*/
+.text75 {
+	font-size:75%;
+}
+.text80 {
+	font-size:80%;
+}
+.text85 {
+	font-size:85%;
+}
+.text90 {
+	font-size:100%;
+}
+.text120 {
+	font-size:120%;
+	line-height: 120%;
+}
+.text150 {
+	font-size:150%;
+	line-height: 130%;
+}
+.text200 {
+	font-size:200%;
+	line-height: 130%;
+}
+.text250 {
+	font-size:250%;
+	line-height: 130%;
+}
+.text300 {
+	font-size:300%;
+	line-height: 130%;
+}
+.text350 {
+	font-size:350%;
+	line-height: 130%;
+}
+.text400 {
+	font-size:400%;
+	line-height: 130%;
+}
+
+/* 太字*/
+.text-b {
+	font-weight: bold;
+}
+.text120-b {
+	font-size:120%;
+	font-weight: bold;
+	line-height: 120%;
+}
+.text130-b {
+	font-size:130%;
+	font-weight: bold;
+	line-height: 130%;
+}
+.text150-b {
+	font-size:150%;
+	font-weight: bold;
+	line-height: 130%;
+}
+.text160-b {
+	font-size:150%;
+	font-weight: bold;
+	line-height: 150%;
+}
+.text180-b {
+	font-size:180%;
+	font-weight: bold;
+	line-height: 130%;
+}
+.text200-b {
+	font-size:200%;
+	font-weight: bold;
+	line-height: 130%;
+}
+.text220-b {
+	font-size:220%;
+	font-weight: bold;
+	line-height: 130%;
+}
+.text250-b {
+	font-size:250%;
+	font-weight: bold;
+	line-height: 130%;
+}
+.text300-b {
+	font-size:300%;
+	font-weight: bold;
+	line-height: 130%;
+}
+.text350-b {
+	font-size:350%;
+	font-weight: bold;
+	line-height: 130%;
+}
+.text400-b {
+	font-size:400%;
+	font-weight: bold;
+	line-height: 130%;
+}
+
+/* 下線*/
+.text-u {
+	text-decoration: underline;
+}
+.text120-u {
+	font-size:120%;
+	text-decoration: underline;
+	line-height: 120%;
+}
+.text150-u {
+	font-size:150%;
+	text-decoration: underline;
+	line-height: 130%;
+}
+.text200-u {
+	font-size:200%;
+	text-decoration: underline;
+	line-height: 130%;
+}
+.text250-u {
+	font-size:250%;
+	text-decoration: underline;
+	line-height: 130%;
+}
+.text300-u {
+	font-size:300%;
+	text-decoration: underline;
+	line-height: 130%;
+}
+.text350-u {
+	font-size:350%;
+	text-decoration: underline;
+	line-height: 130%;
+}
+.text400-u {
+	font-size:400%;
+	text-decoration: underline;
+	line-height: 130%;
+}
+
+/* 太字・下線*/
+.text-b-u {
+	font-weight: bold;
+	text-decoration: underline;
+}
+.text120-b-u {
+	font-size:120%;
+	font-weight: bold;
+	text-decoration: underline;
+	line-height: 120%;
+}
+.text150-b-u {
+	font-size:150%;
+	font-weight: bold;
+	text-decoration: underline;
+	line-height: 130%;
+}
+.text200-b-u {
+	font-size:200%;
+	font-weight: bold;
+	text-decoration: underline;
+	line-height: 130%;
+}
+.text250-b-u {
+	font-size:250%;
+	font-weight: bold;
+	text-decoration: underline;
+	line-height: 130%;
+}
+.text300-b-u {
+	font-size:300%;
+	font-weight: bold;
+	text-decoration: underline;
+	line-height: 130%;
+}
+.text350-b-u {
+	font-size:350%;
+	font-weight: bold;
+	text-decoration: underline;
+	line-height: 130%;
+}
+.text400-b-u {
+	font-size:400%;
+	font-weight: bold;
+	text-decoration: underline;
+	line-height: 130%;
+}
+
+/* 赤*/
+.textr {
+	color: red;
+}
+.text120r {
+	color: red;
+	font-size:120%;
+	line-height: 120%;
+}
+.text150r {
+	color: red;
+	font-size:150%;
+	line-height: 130%;
+}
+.text200r {
+	color: red;
+	font-size:200%;
+	line-height: 130%;
+}
+.text250r {
+	color: red;
+	font-size:250%;
+	line-height: 130%;
+}
+.text300r {
+	color: red;
+	font-size:300%;
+	line-height: 130%;
+}
+.text350r {
+	color: red;
+	font-size:350%;
+	line-height: 130%;
+}
+.text400r{
+	color: red;
+	font-size:400%;
+	line-height: 130%;
+}
+
+/* 赤・太字*/
+.textr-b {
+	color: red;
+	font-weight: bold;
+}
+.text120r-b {
+	color: red;
+	font-size:120%;
+	font-weight: bold;
+	line-height: 120%;
+}
+.text130r-b {
+	color: red;
+	font-size:130%;
+	font-weight: bold;
+	line-height: 130%;
+}
+.text150r-b {
+	color: red;
+	font-size:150%;
+	font-weight: bold;
+	line-height: 130%;
+}
+.text200r-b {
+	color: red;
+	font-size:200%;
+	font-weight: bold;
+	line-height: 130%;
+}
+.text250r-b {
+	color: red;
+	font-size:250%;
+	font-weight: bold;
+	line-height: 130%;
+}
+.text300r-b {
+	color: red;
+	font-size:300%;
+	font-weight: bold;
+	line-height: 130%;
+}
+.text350r-b {
+	color: red;
+	font-size:350%;
+	font-weight: bold;
+	line-height: 130%;
+}
+.text400r-b{
+	color: red;
+	font-size:400%;
+	font-weight: bold;
+	line-height: 130%;
+}
+/* 赤・下線*/
+.textr-u {
+	color: red;
+	text-decoration: underline;
+}
+.text120r-u {
+	color: red;
+	font-size:120%;
+	text-decoration: underline;
+	line-height: 120%;
+}
+.text150r-u {
+	color: red;
+	font-size:150%;
+	text-decoration: underline;
+	line-height: 130%;
+}
+.text200r-u {
+	color: red;
+	font-size:200%;
+	text-decoration: underline;
+	line-height: 130%;
+}
+.text250r-u {
+	color: red;
+	font-size:250%;
+	text-decoration: underline;
+	line-height: 130%;
+}
+.text300r-u {
+	color: red;
+	font-size:300%;
+	text-decoration: underline;
+	line-height: 130%;
+}
+.text350r-u {
+	color: red;
+	font-size:350%;
+	text-decoration: underline;
+	line-height: 130%;
+}
+.text400r-u {
+	color: red;
+	font-size:400%;
+	text-decoration: underline;
+	line-height: 130%;
+}
+
+/* 赤・太字・下線*/
+.textr-b-u {
+	color: red;
+	font-weight: bold;
+	text-decoration: underline;
+}
+.text120r-b-u {
+	color: red;
+	font-size:120%;
+	font-weight: bold;
+	text-decoration: underline;
+	line-height: 120%;
+}
+.text150r-b-u {
+	color: red;
+	font-size:150%;
+	font-weight: bold;
+	text-decoration: underline;
+	line-height: 130%;
+}
+.text200r-b-u {
+	color: red;
+	font-size:200%;
+	font-weight: bold;
+	text-decoration: underline;
+	line-height: 130%;
+}
+.text250r-b-u {
+	color: red;
+	font-size:250%;
+	font-weight: bold;
+	text-decoration: underline;
+	line-height: 130%;
+}
+.text300r-b-u {
+	color: red;
+	font-size:300%;
+	font-weight: bold;
+	text-decoration: underline;
+	line-height: 130%;
+}
+.text350r-b-u {
+	color: red;
+	font-size:350%;
+	font-weight: bold;
+	text-decoration: underline;
+	line-height: 130%;
+}
+.text400r-b-u {
+	color: red;
+	font-size:400%;
+	font-weight: bold;
+	text-decoration: underline;
+	line-height: 130%;
+}
+
+/* 黄色*/
+.texty {
+	color: #FFFF00;
+}
+.text120y {
+	color: #FFFF00;
+	font-size:120%;
+	line-height: 120%;
+}
+.text150y {
+	color: #FFFF00;
+	font-size:150%;
+	line-height: 130%;
+}
+.text200y {
+	color: #FFFF00;
+	font-size:200%;
+	line-height: 130%;
+}
+.text250y {
+	color: #FFFF00;
+	font-size:250%;
+	line-height: 130%;
+}
+.text300y {
+	color: #FFFF00;
+	font-size:300%;
+	line-height: 130%;
+}
+.text350y {
+	color: #FFFF00;
+	font-size:350%;
+	line-height: 130%;
+}
+.text400y {
+	color: #FFFF00;
+	font-size:400%;
+	line-height: 130%;
+}
+/* 黄色・太字*/
+.texty-b {
+	color: #FFFF00;
+	font-weight: bold;
+}
+.text120y-b {
+	color: #FFFF00;
+	font-size:120%;
+	font-weight: bold;
+	line-height: 120%;
+}
+.text150y-b {
+	color: #FFFF00;
+	font-size:150%;
+	font-weight: bold;
+	line-height: 130%;
+}
+.text200y-b {
+	color: #FFFF00;
+	font-size:200%;
+	font-weight: bold;
+	line-height: 130%;
+}
+.text250y-b {
+	color: #FFFF00;
+	font-size:250%;
+	font-weight: bold;
+	line-height: 130%;
+}
+.text300y-b {
+	color: #FFFF00;
+	font-size:300%;
+	font-weight: bold;
+	line-height: 130%;
+}
+.text350y-b {
+	color: #FFFF00;
+	font-size:350%;
+	font-weight: bold;
+	line-height: 130%;
+}
+.text400y-b {
+	color: #FFFF00;
+	font-size:400%;
+	font-weight: bold;
+	line-height: 130%;
+}
+/* 黄色・下線*/
+.texty-u {
+	color: #FFFF00;
+	text-decoration: underline;
+}
+.text120y-u {
+	color: #FFFF00;
+	font-size:120%;
+	text-decoration: underline;
+	line-height: 120%;
+}
+.text150y-u {
+	color: #FFFF00;
+	font-size:150%;
+	text-decoration: underline;
+	line-height: 130%;
+}
+.text200y-u {
+	color: #FFFF00;
+	font-size:200%;
+	text-decoration: underline;
+	line-height: 130%;
+}
+.text250y-u {
+	color: #FFFF00;
+	font-size:250%;
+	text-decoration: underline;
+	line-height: 130%;
+}
+.text300y-u {
+	color: #FFFF00;
+	font-size:300%;
+	text-decoration: underline;
+	line-height: 130%;
+}
+.text350y-u {
+	color: #FFFF00;
+	font-size:350%;
+	text-decoration: underline;
+	line-height: 130%;
+}
+.text400y-u {
+	color: #FFFF00;
+	font-size:400%;
+	text-decoration: underline;
+	line-height: 130%;
+}
+/* 黄色・太字・下線*/
+.texty-b-u {
+	color: #FFFF00;
+	font-weight: bold;
+	text-decoration: underline;
+}
+.text120y-b-u {
+	color: #FFFF00;
+	font-size:120%;
+	font-weight: bold;
+	text-decoration: underline;
+	line-height: 120%;
+}
+.text150y-b-u {
+	color: #FFFF00;
+	font-size:150%;
+	font-weight: bold;
+	text-decoration: underline;
+	line-height: 130%;
+}
+.text200y-b-u {
+	color: #FFFF00;
+	font-size:200%;
+	font-weight: bold;
+	text-decoration: underline;
+	line-height: 130%;
+}
+.text250y-b-u {
+	color: #FFFF00;
+	font-size:250%;
+	font-weight: bold;
+	text-decoration: underline;
+	line-height: 130%;
+}
+.text300y-b-u {
+	color: #FFFF00;
+	font-size:300%;
+	font-weight: bold;
+	text-decoration: underline;
+	line-height: 130%;
+}
+.text350y-b-u {
+	color: #FFFF00;
+	font-size:350%;
+	font-weight: bold;
+	text-decoration: underline;
+	line-height: 130%;
+}
+.text400y-b-u {
+	color: #FFFF00;
+	font-size:400%;
+	font-weight: bold;
+	text-decoration: underline;
+	line-height: 130%;
+}
+/* 青*/
+.textb {
+	color: #2C80B1;
+}
+.text120b {
+	color: #2C80B1;
+	font-size:120%;
+	line-height: 120%;
+}
+.text150b {
+	color: #2C80B1;
+	font-size:150%;
+	line-height: 130%;
+}
+.text200b {
+	color: #2C80B1;
+	font-size:200%;
+	line-height: 130%;
+}
+.text250b {
+	color: #2C80B1;
+	font-size:250%;
+	line-height: 130%;
+}
+.text300b {
+	color: #2C80B1;
+	font-size:300%;
+	line-height: 130%;
+}
+.text350b {
+	color: #2C80B1;
+	font-size:350%;
+	line-height: 130%;
+}
+.text400b {
+	color: #2C80B1;
+	font-size:400%;
+	line-height: 130%;
+}
+/* 青・太字*/
+.textb-b {
+	color: #2C80B1;
+	font-weight: bold;
+}
+.text120b-b {
+	color: #2C80B1;
+	font-size:120%;
+	font-weight: bold;
+	line-height: 120%;
+}
+.text150b-b {
+	color: #2C80B1;
+	font-size:150%;
+	font-weight: bold;
+	line-height: 130%;
+}
+.text200b-b {
+	color: #2C80B1;
+	font-size:200%;
+	font-weight: bold;
+	line-height: 130%;
+}
+.text250b-b {
+	color: #2C80B1;
+	font-size:250%;
+	font-weight: bold;
+	line-height: 130%;
+}
+.text300b-b {
+	color: #2C80B1;
+	font-size:300%;
+	font-weight: bold;
+	line-height: 130%;
+}
+.text350b-b {
+	color: #2C80B1;
+	font-size:350%;
+	font-weight: bold;
+	line-height: 130%;
+}
+.text400b-b {
+	color:#2C80B1;
+	font-size:400%;
+	font-weight: bold;
+	line-height: 130%;
+}
+/* 青・下線*/
+.textb-u {
+	color: #2C80B1;
+	text-decoration: underline;
+}
+.text120b-u {
+	color: #2C80B1;
+	font-size:120%;
+	text-decoration: underline;
+	line-height: 120%;
+}
+.text150b-u {
+	color: #2C80B1;
+	font-size:150%;
+	text-decoration: underline;
+	line-height: 130%;
+}
+.text200b-u {
+	color: #2C80B1;
+	font-size:200%;
+	text-decoration: underline;
+	line-height: 130%;
+}
+.text250b-u {
+	color: #2C80B1;
+	font-size:250%;
+	text-decoration: underline;
+	line-height: 130%;
+}
+.text300b-u {
+	color: #2C80B1;
+	font-size:300%;
+	text-decoration: underline;
+	line-height: 130%;
+}
+.text350b-u {
+	color: #2C80B1;
+	font-size:350%;
+	text-decoration: underline;
+	line-height: 130%;
+}
+.text400b-u {
+	color:#2C80B1;
+	font-size:400%;
+	text-decoration: underline;
+	line-height: 130%;
+}
+/* 青・太字・下線*/
+.textb-b-u {
+	color: #2C80B1;
+	font-weight: bold;
+	text-decoration: underline;
+}
+.text120b-b-u {
+	color: #2C80B1;
+	font-size:120%;
+	font-weight: bold;
+	text-decoration: underline;
+	line-height: 120%;
+}
+.text150b-b-u {
+	color: #2C80B1;
+	font-size:150%;
+	font-weight: bold;
+	text-decoration: underline;
+	line-height: 130%;
+}
+.text200b-b-u {
+	color: #2C80B1;
+	font-size:200%;
+	font-weight: bold;
+	text-decoration: underline;
+	line-height: 130%;
+}
+.text250b-b-u {
+	color: #2C80B1;
+	font-size:250%;
+	font-weight: bold;
+	text-decoration: underline;
+	line-height: 130%;
+}
+.text300b-b-u {
+	color: #2C80B1;
+	font-size:300%;
+	font-weight: bold;
+	text-decoration: underline;
+	line-height: 130%;
+}
+.text350b-b-u {
+	color: #2C80B1;
+	font-size:350%;
+	font-weight: bold;
+	text-decoration: underline;
+	line-height: 130%;
+}
+.text400b-b-u {
+	color:#2C80B1;
+	font-size:400%;
+	font-weight: bold;
+	text-decoration: underline;
+	line-height: 130%;
+}
+/* スカイブルー*/
+.texts {
+	color: #CCEEFF;
+}
+.text120s {
+	color: #CCEEFF;
+	font-size:120%;
+	line-height: 120%;
+}
+.text150s {
+	color: #CCEEFF;
+	font-size:150%;
+	line-height: 130%;
+}
+.text200s {
+	color: #CCEEFF;
+	font-size:200%;
+	line-height: 130%;
+}
+.text250s {
+	color: #CCEEFF;
+	font-size:250%;
+	line-height: 130%;
+}
+.text300s {
+	color: #CCEEFF;
+	font-size:300%;
+	line-height: 130%;
+}
+.text350s {
+	color: #CCEEFF;
+	font-size:350%;
+	line-height: 130%;
+}
+.text400s {
+	color: #CCEEFF;
+	font-size:400%;
+	line-height: 130%;
+}
+/* スカイブルー・太字*/
+.texts-b {
+	color: #CCEEFF;
+	font-weight: bold;
+}
+.text120s-b {
+	color: #CCEEFF;
+	font-size:120%;
+	font-weight: bold;
+	line-height: 120%;
+}
+.text150s-b {
+	color: #CCEEFF;
+	font-size:150%;
+	font-weight: bold;
+	line-height: 130%;
+}
+.text200s-b {
+	color: #CCEEFF;
+	font-size:200%;
+	font-weight: bold;
+	line-height: 130%;
+}
+.text250s-b {
+	color: #CCEEFF;
+	font-size:250%;
+	font-weight: bold;
+	line-height: 130%;
+}
+.text300s-b {
+	color: #CCEEFF;
+	font-size:300%;
+    font-weight: bold;
+	line-height: 130%;
+}
+.text350s-b {
+	color: #CCEEFF;
+	font-size:350%;
+    font-weight: bold;
+	line-height: 130%;
+}
+.text400s-b {
+	color: #CCEEFF;
+	font-size:400%;
+	font-weight: bold;
+	line-height: 130%;
+}
+
+/* スカイブルー・下線*/
+.texts-u {
+	color: #CCEEFF;
+	text-decoration: underline;
+}
+.text120s-u {
+	color: #CCEEFF;
+	font-size:120%;
+	text-decoration: underline;
+	line-height: 120%;
+}
+.text150s-u {
+	color: #CCEEFF;
+	font-size:150%;
+	text-decoration: underline;
+	line-height: 130%;
+}
+.text200s-u {
+	color: #CCEEFF;
+	font-size:200%;
+	text-decoration: underline;
+	line-height: 130%;
+}
+.text250s-u {
+	color: #CCEEFF;
+	font-size:250%;
+	text-decoration: underline;
+	line-height: 130%;
+}
+.text300s-u {
+	color: #CCEEFF;
+	font-size:300%;
+	text-decoration: underline;
+	line-height: 130%;
+}
+.text350s-u {
+	color: #CCEEFF;
+	font-size:350%;
+	text-decoration: underline;
+	line-height: 130%;
+}
+.text400s-u {
+	color: #CCEEFF;
+	font-size:400%;
+	text-decoration: underline;
+	line-height: 130%;
+}
+/* スカイブルー・太字・下線*/
+.texts-b-u {
+	color: #CCEEFF;
+	font-weight: bold;
+	text-decoration: underline;
+}
+.text120s-b-u {
+	color: #CCEEFF;
+	font-size:120%;
+	font-weight: bold;
+	text-decoration: underline;
+	line-height: 120%;
+}
+.text150s-b-u {
+	color: #CCEEFF;
+	font-size:150%;
+	font-weight: bold;
+	text-decoration: underline;
+	line-height: 130%;
+}
+.text200s-b-u {
+	color: #CCEEFF;
+	font-size:200%;
+	font-weight: bold;
+	text-decoration: underline;
+	line-height: 130%;
+}
+.text250s-b-u {
+	color: #CCEEFF;
+	font-size:250%;
+	font-weight: bold;
+	text-decoration: underline;
+	line-height: 130%;
+}
+.text300s-b-u {
+	color: #CCEEFF;
+	font-size:300%;
+	font-weight: bold;
+	text-decoration: underline;
+	line-height: 130%;
+}
+.text350s-b-u {
+	color: #CCEEFF;
+	font-size:350%;
+	font-weight: bold;
+	text-decoration: underline;
+	line-height: 130%;
+}
+.text400s-b-u {
+	color: #CCEEFF;
+	font-size:400%;
+	font-weight: bold;
+	text-decoration: underline;
+	line-height: 130%;
+}
+/* 蛍光ペン風マーカー(黄色）*/
+.text-m01 {
+	background: linear-gradient(rgba(254,254,152,0) 30%,#FFFF45 100%);
+}
+.text-m01-b {
+	background: linear-gradient(rgba(254,254,152,0) 30%,#FFFF45 100%);
+	font-weight: bold;
+}
+.text120-m01 {
+	background: linear-gradient(rgba(254,254,152,0) 30%,#FFFF45 100%);
+	font-size:120%;
+}
+.text120-m01-b {
+	background: linear-gradient(rgba(254,254,152,0) 30%,#FFFF45 100%);
+	font-weight: bold;
+	font-size:120%;
+}
+.text150-m01 {
+	background: linear-gradient(rgba(254,254,152,0) 30%,#FFFF45 100%);
+	font-size:150%;
+}
+.text150-m01-b {
+	background: linear-gradient(rgba(254,254,152,0) 30%,#FFFF45 100%);
+	font-weight: bold;
+	font-size:150%;
+}
+.text200-m01 {
+	background: linear-gradient(rgba(254,254,152,0) 30%,#FFFF45 100%);
+	font-size:200%;
+}
+.text200-m01-b {
+	background: linear-gradient(rgba(254,254,152,0) 30%,#FFFF45 100%);
+	font-weight: bold;
+	font-size:200%;
+}
+.textr-m01 {
+	background: linear-gradient(rgba(254,254,152,0) 30%,#FFFF45 100%);
+	color: red;
+}
+.textr-m01-b {
+	background: linear-gradient(rgba(254,254,152,0) 30%,#FFFF45 100%);
+	color: red;
+	font-weight: bold;
+}
+.text120r-m01 {
+	background: linear-gradient(rgba(254,254,152,0) 30%,#FFFF45 100%);
+	color: red;
+	font-size:120%;
+}
+.text120r-m01-b {
+	background: linear-gradient(rgba(254,254,152,0) 30%,#FFFF45 100%);
+	color: red;
+	font-size:120%;
+	font-weight: bold;
+}
+.text150r-m01 {
+	background: linear-gradient(rgba(254,254,152,0) 30%,#FFFF45 100%);
+	color: red;
+	font-size:150%;
+}
+.text150r-m01-b {
+	background: linear-gradient(rgba(254,254,152,0) 30%,#FFFF45 100%);
+	color: red;
+	font-size:150%;
+	font-weight: bold;
+}
+.text200r-m01 {
+	background: linear-gradient(rgba(254,254,152,0) 30%,#FFFF45 100%);
+	color: red;
+	font-size:200%;
+}
+.text200r-m01-b {
+	background: linear-gradient(rgba(254,254,152,0) 30%,#FFFF45 100%);
+	color: red;
+	font-size:200%;
+	font-weight: bold;
+}
+/* 蛍光ペン風マーカー(ピンク）*/
+.text-m02 {
+	background: linear-gradient(rgba(255,204,255,0) 30%,#FFCCFF 100%);
+}
+.text-m02-b {
+	background: linear-gradient(rgba(255,204,255,0) 30%,#FFCCFF 100%);
+	font-weight: bold;
+}
+.text120-m02 {
+	background: linear-gradient(rgba(255,204,255,0) 30%,#FFCCFF 100%);
+	font-size:120%;
+}
+.text120-m02-b {
+	background: linear-gradient(rgba(255,204,255,0) 30%,#FFCCFF 100%);
+	font-weight: bold;
+	font-size:120%;
+}
+.text150-m02 {
+	background: linear-gradient(rgba(255,204,255,0) 30%,#FFCCFF 100%);
+	font-size:150%;
+}
+.text150-m02-b {
+	background: linear-gradient(rgba(255,204,255,0) 30%,#FFCCFF 100%);
+	font-weight: bold;
+	font-size:150%;
+}
+.text200-m02 {
+	background: linear-gradient(rgba(255,204,255,0) 30%,#FFCCFF 100%);
+	font-size:200%;
+}
+.text200-m02-b {
+	background: linear-gradient(rgba(255,204,255,0) 30%,#FFCCFF 100%);
+	font-weight: bold;
+	font-size:200%;
+}
+/* 蛍光ペン風マーカー(青）*/
+.text-m03 {
+	background: linear-gradient(rgba(255,255,205,0) 30%,#8FFFFF 100%);
+}
+.text-m03-b {
+	background: linear-gradient(rgba(255,255,205,0) 30%,#8FFFFF 100%);
+	font-weight: bold;
+}
+.text120-m03 {
+	background: linear-gradient(rgba(255,255,205,0) 30%,#8FFFFF 100%);
+	font-size:120%;
+}
+.text120-m03-b {
+	background: linear-gradient(rgba(255,255,205,0) 30%,#8FFFFF 100%);
+	font-weight: bold;
+	font-size:120%;
+}
+.text150-m03 {
+	background: linear-gradient(rgba(255,255,205,0) 30%,#8FFFFF 100%);
+	font-size:150%;
+}
+.text150-m03-b {
+	background: linear-gradient(rgba(255,255,205,0) 30%,#8FFFFF 100%);
+	font-weight: bold;
+	font-size:150%;
+}
+.text200-m03 {
+	background: linear-gradient(rgba(255,255,205,0) 30%,#8FFFFF 100%);
+	font-size:200%;
+}
+.text200-m03-b {
+	background: linear-gradient(rgba(255,255,205,0) 30%,#8FFFFF 100%);
+	font-weight: bold;
+	font-size:200%;
+}
+/* 囲み文字*/
+.surround {
+	border: 1px solid;
+	padding: 0px 5px;
+}
+.surround2 {
+    border-radius: 50%;
+    padding-top: 0.1em;
+    padding-left: 0.18em;
+    padding-right: 0.18em;
+	border: 1px solid;
+}
+/* フチ付き白文字*/
+.text-e-w {
+	color: #FFFFFF;
+	text-shadow:
+        0 2px 0 #000000,
+        2px 0 0 #000000,
+        0 -2px 0 #000000,
+        -2px 0 0 #000000,
+        -2px -2px 0 #000000,
+        2px -2px 0 #000000,
+        -2px 2px 0 #000000,
+        2px 2px 0 #000000;
+}
+.text-e-w120 {
+	font-size:120%;
+	line-height: 120%;
+	color: #FFFFFF;
+	text-shadow:
+        0 2px 0 #000000,
+        2px 0 0 #000000,
+        0 -2px 0 #000000,
+        -2px 0 0 #000000,
+        -2px -2px 0 #000000,
+        2px -2px 0 #000000,
+        -2px 2px 0 #000000,
+        2px 2px 0 #000000;
+}
+.text-e-w150 {
+	font-size:150%;
+	line-height: 130%;
+	color: #FFFFFF;
+	text-shadow:
+        0 2px 0 #000000,
+        2px 0 0 #000000,
+        0 -2px 0 #000000,
+        -2px 0 0 #000000,
+        -2px -2px 0 #000000,
+        2px -2px 0 #000000,
+        -2px 2px 0 #000000,
+        2px 2px 0 #000000;
+}
+.text-e-w200 {
+	font-size:200%;
+	line-height: 130%;
+	color: #FFFFFF;
+	text-shadow:
+        0 2px 0 #000000,
+        2px 0 0 #000000,
+        0 -2px 0 #000000,
+        -2px 0 0 #000000,
+        -2px -2px 0 #000000,
+        2px -2px 0 #000000,
+        -2px 2px 0 #000000,
+        2px 2px 0 #000000;
+}
+.text-e-w250 {
+	font-size:250%;
+	line-height: 130%;
+	color: #FFFFFF;
+	text-shadow:
+        0 2px 0 #000000,
+        2px 0 0 #000000,
+        0 -2px 0 #000000,
+        -2px 0 0 #000000,
+        -2px -2px 0 #000000,
+        2px -2px 0 #000000,
+        -2px 2px 0 #000000,
+        2px 2px 0 #000000;
+}
+.text-e-w300 {
+	font-size:300%;
+	line-height: 130%;
+	color: #FFFFFF;
+	text-shadow:
+        0 2px 0 #000000,
+        2px 0 0 #000000,
+        0 -2px 0 #000000,
+        -2px 0 0 #000000,
+        -2px -2px 0 #000000,
+        2px -2px 0 #000000,
+        -2px 2px 0 #000000,
+        2px 2px 0 #000000;
+}
+.text-e-w350 {
+	font-size:350%;
+	line-height: 130%;
+	color: #FFFFFF;
+	text-shadow:
+        0 2px 0 #000000,
+        2px 0 0 #000000,
+        0 -2px 0 #000000,
+        -2px 0 0 #000000,
+        -2px -2px 0 #000000,
+        2px -2px 0 #000000,
+        -2px 2px 0 #000000,
+        2px 2px 0 #000000;
+}
+.text-e-w400 {
+	font-size:400%;
+	line-height: 130%;
+	color: #FFFFFF;
+	text-shadow:
+        0 2px 0 #000000,
+        2px 0 0 #000000,
+        0 -2px 0 #000000,
+        -2px 0 0 #000000,
+        -2px -2px 0 #000000,
+        2px -2px 0 #000000,
+        -2px 2px 0 #000000,
+        2px 2px 0 #000000;
+}
+/* フチ付き白文字・太字*/
+.text-e-w-b {
+	color: #FFFFFF;
+	font-weight: bold;
+	text-shadow:
+        0 2px 0 #000000,
+        2px 0 0 #000000,
+        0 -2px 0 #000000,
+        -2px 0 0 #000000,
+        -2px -2px 0 #000000,
+        2px -2px 0 #000000,
+        -2px 2px 0 #000000,
+        2px 2px 0 #000000;
+}
+.text-e-w120-b {
+	font-size:120%;
+	line-height: 120%;
+	color: #FFFFFF;
+	font-weight: bold;
+	text-shadow:
+        0 2px 0 #000000,
+        2px 0 0 #000000,
+        0 -2px 0 #000000,
+        -2px 0 0 #000000,
+        -2px -2px 0 #000000,
+        2px -2px 0 #000000,
+        -2px 2px 0 #000000,
+        2px 2px 0 #000000;
+}
+.text-e-w150-b {
+	font-size:150%;
+	line-height: 130%;
+	color: #FFFFFF;
+	font-weight: bold;
+	text-shadow:
+        0 2px 0 #000000,
+        2px 0 0 #000000,
+        0 -2px 0 #000000,
+        -2px 0 0 #000000,
+        -2px -2px 0 #000000,
+        2px -2px 0 #000000,
+        -2px 2px 0 #000000,
+        2px 2px 0 #000000;
+}
+.text-e-w200-b {
+	font-size:200%;
+	line-height: 130%;
+	color: #FFFFFF;
+	font-weight: bold;
+	text-shadow:
+        0 2px 0 #000000,
+        2px 0 0 #000000,
+        0 -2px 0 #000000,
+        -2px 0 0 #000000,
+        -2px -2px 0 #000000,
+        2px -2px 0 #000000,
+        -2px 2px 0 #000000,
+        2px 2px 0 #000000;
+}
+.text-e-w250-b {
+	font-size:250%;
+	line-height: 130%;
+	color: #FFFFFF;
+	font-weight: bold;
+	text-shadow:
+        0 2px 0 #000000,
+        2px 0 0 #000000,
+        0 -2px 0 #000000,
+        -2px 0 0 #000000,
+        -2px -2px 0 #000000,
+        2px -2px 0 #000000,
+        -2px 2px 0 #000000,
+        2px 2px 0 #000000;
+}
+.text-e-w300-b {
+	font-size:300%;
+	line-height: 130%;
+	color: #FFFFFF;
+	font-weight: bold;
+	text-shadow:
+        0 2px 0 #000000,
+        2px 0 0 #000000,
+        0 -2px 0 #000000,
+        -2px 0 0 #000000,
+        -2px -2px 0 #000000,
+        2px -2px 0 #000000,
+        -2px 2px 0 #000000,
+        2px 2px 0 #000000;
+}
+.text-e-w350-b {
+	font-size:350%;
+	line-height: 130%;
+	color: #FFFFFF;
+	font-weight: bold;
+	text-shadow:
+        0 2px 0 #000000,
+        2px 0 0 #000000,
+        0 -2px 0 #000000,
+        -2px 0 0 #000000,
+        -2px -2px 0 #000000,
+        2px -2px 0 #000000,
+        -2px 2px 0 #000000,
+        2px 2px 0 #000000;
+}
+.text-e-w400-b {
+	font-size:400%;
+	line-height: 130%;
+	color: #FFFFFF;
+	font-weight: bold;
+	text-shadow:
+        0 2px 0 #000000,
+        2px 0 0 #000000,
+        0 -2px 0 #000000,
+        -2px 0 0 #000000,
+        -2px -2px 0 #000000,
+        2px -2px 0 #000000,
+        -2px 2px 0 #000000,
+        2px 2px 0 #000000;
+}
+/* フチ付き白文字・下線*/
+.text-e-w-u {
+	color: #FFFFFF;
+	text-decoration: underline;
+	text-shadow:
+        0 2px 0 #000000,
+        2px 0 0 #000000,
+        0 -2px 0 #000000,
+        -2px 0 0 #000000,
+        -2px -2px 0 #000000,
+        2px -2px 0 #000000,
+        -2px 2px 0 #000000,
+        2px 2px 0 #000000;
+}
+.text-e-w120-u {
+	font-size:120%;
+	line-height: 120%;
+	color: #FFFFFF;
+	text-decoration: underline;
+	text-shadow:
+        0 2px 0 #000000,
+        2px 0 0 #000000,
+        0 -2px 0 #000000,
+        -2px 0 0 #000000,
+        -2px -2px 0 #000000,
+        2px -2px 0 #000000,
+        -2px 2px 0 #000000,
+        2px 2px 0 #000000;
+}
+.text-e-w150-u {
+	font-size:150%;
+	line-height: 130%;
+	color: #FFFFFF;
+	text-decoration: underline;
+	text-shadow:
+        0 2px 0 #000000,
+        2px 0 0 #000000,
+        0 -2px 0 #000000,
+        -2px 0 0 #000000,
+        -2px -2px 0 #000000,
+        2px -2px 0 #000000,
+        -2px 2px 0 #000000,
+        2px 2px 0 #000000;
+}
+.text-e-w200-u {
+	font-size:200%;
+	line-height: 130%;
+	color: #FFFFFF;
+	text-decoration: underline;
+	text-shadow:
+        0 2px 0 #000000,
+        2px 0 0 #000000,
+        0 -2px 0 #000000,
+        -2px 0 0 #000000,
+        -2px -2px 0 #000000,
+        2px -2px 0 #000000,
+        -2px 2px 0 #000000,
+        2px 2px 0 #000000;
+}
+.text-e-w250-u {
+	font-size:250%;
+	line-height: 130%;
+	color: #FFFFFF;
+	text-decoration: underline;
+	text-shadow:
+        0 2px 0 #000000,
+        2px 0 0 #000000,
+        0 -2px 0 #000000,
+        -2px 0 0 #000000,
+        -2px -2px 0 #000000,
+        2px -2px 0 #000000,
+        -2px 2px 0 #000000,
+        2px 2px 0 #000000;
+}
+.text-e-w300-u {
+	font-size:300%;
+	line-height: 130%;
+	color: #FFFFFF;
+	text-decoration: underline;
+	text-shadow:
+        0 2px 0 #000000,
+        2px 0 0 #000000,
+        0 -2px 0 #000000,
+        -2px 0 0 #000000,
+        -2px -2px 0 #000000,
+        2px -2px 0 #000000,
+        -2px 2px 0 #000000,
+        2px 2px 0 #000000;
+}
+.text-e-w350-u {
+	font-size:350%;
+	line-height: 130%;
+	color: #FFFFFF;
+	text-decoration: underline;
+	text-shadow:
+        0 2px 0 #000000,
+        2px 0 0 #000000,
+        0 -2px 0 #000000,
+        -2px 0 0 #000000,
+        -2px -2px 0 #000000,
+        2px -2px 0 #000000,
+        -2px 2px 0 #000000,
+        2px 2px 0 #000000;
+}
+.text-e-w400-u {
+	font-size:400%;
+	line-height: 130%;
+	color: #FFFFFF;
+	text-decoration: underline;
+	text-shadow:
+        0 2px 0 #000000,
+        2px 0 0 #000000,
+        0 -2px 0 #000000,
+        -2px 0 0 #000000,
+        -2px -2px 0 #000000,
+        2px -2px 0 #000000,
+        -2px 2px 0 #000000,
+        2px 2px 0 #000000;
+}
+/* フチ付き白文字・太字・下線*/
+.text-e-w-b-u {
+	color: #FFFFFF;
+	font-weight: bold;
+	text-decoration: underline;
+	text-shadow:
+        0 2px 0 #000000,
+        2px 0 0 #000000,
+        0 -2px 0 #000000,
+        -2px 0 0 #000000,
+        -2px -2px 0 #000000,
+        2px -2px 0 #000000,
+        -2px 2px 0 #000000,
+        2px 2px 0 #000000;
+}
+.text-e-w120-b-u {
+	font-size:120%;
+	line-height: 120%;
+	color: #FFFFFF;
+	font-weight: bold;
+	text-decoration: underline;
+	text-shadow:
+        0 2px 0 #000000,
+        2px 0 0 #000000,
+        0 -2px 0 #000000,
+        -2px 0 0 #000000,
+        -2px -2px 0 #000000,
+        2px -2px 0 #000000,
+        -2px 2px 0 #000000,
+        2px 2px 0 #000000;
+}
+.text-e-w150-b-u {
+	font-size:150%;
+	line-height: 130%;
+	color: #FFFFFF;
+	font-weight: bold;
+	text-decoration: underline;
+	text-shadow:
+        0 2px 0 #000000,
+        2px 0 0 #000000,
+        0 -2px 0 #000000,
+        -2px 0 0 #000000,
+        -2px -2px 0 #000000,
+        2px -2px 0 #000000,
+        -2px 2px 0 #000000,
+        2px 2px 0 #000000;
+}
+.text-e-w200-b-u {
+	font-size:200%;
+	line-height: 130%;
+	color: #FFFFFF;
+	font-weight: bold;
+	text-decoration: underline;
+	text-shadow:
+        0 2px 0 #000000,
+        2px 0 0 #000000,
+        0 -2px 0 #000000,
+        -2px 0 0 #000000,
+        -2px -2px 0 #000000,
+        2px -2px 0 #000000,
+        -2px 2px 0 #000000,
+        2px 2px 0 #000000;
+}
+.text-e-w250-b-u {
+	font-size:250%;
+	line-height: 130%;
+	color: #FFFFFF;
+	font-weight: bold;
+	text-decoration: underline;
+	text-shadow:
+        0 2px 0 #000000,
+        2px 0 0 #000000,
+        0 -2px 0 #000000,
+        -2px 0 0 #000000,
+        -2px -2px 0 #000000,
+        2px -2px 0 #000000,
+        -2px 2px 0 #000000,
+        2px 2px 0 #000000;
+}
+.text-e-w300-b-u {
+	font-size:300%;
+	line-height: 130%;
+	color: #FFFFFF;
+	font-weight: bold;
+	text-decoration: underline;
+	text-shadow:
+        0 2px 0 #000000,
+        2px 0 0 #000000,
+        0 -2px 0 #000000,
+        -2px 0 0 #000000,
+        -2px -2px 0 #000000,
+        2px -2px 0 #000000,
+        -2px 2px 0 #000000,
+        2px 2px 0 #000000;
+}
+.text-e-w350-b-u {
+	font-size:350%;
+	line-height: 130%;
+	color: #FFFFFF;
+	font-weight: bold;
+	text-decoration: underline;
+	text-shadow:
+        0 2px 0 #000000,
+        2px 0 0 #000000,
+        0 -2px 0 #000000,
+        -2px 0 0 #000000,
+        -2px -2px 0 #000000,
+        2px -2px 0 #000000,
+        -2px 2px 0 #000000,
+        2px 2px 0 #000000;
+}
+.text-e-w400-b-u {
+	font-size:400%;
+	line-height: 130%;
+	color: #FFFFFF;
+	font-weight: bold;
+	text-decoration: underline;
+	text-shadow:
+        0 2px 0 #000000,
+        2px 0 0 #000000,
+        0 -2px 0 #000000,
+        -2px 0 0 #000000,
+        -2px -2px 0 #000000,
+        2px -2px 0 #000000,
+        -2px 2px 0 #000000,
+        2px 2px 0 #000000;
+}
+/* フチ付き黄色文字*/
+.text-e-y {
+	color: #FFFF00;
+	text-shadow:
+        0 2px 0 #000000,
+        2px 0 0 #000000,
+        0 -2px 0 #000000,
+        -2px 0 0 #000000,
+        -2px -2px 0 #000000,
+        2px -2px 0 #000000,
+        -2px 2px 0 #000000,
+        2px 2px 0 #000000;
+}
+.text-e-y120 {
+	font-size:120%;
+	line-height: 120%;
+	color: #FFFF00;
+	text-shadow:
+        0 2px 0 #000000,
+        2px 0 0 #000000,
+        0 -2px 0 #000000,
+        -2px 0 0 #000000,
+        -2px -2px 0 #000000,
+        2px -2px 0 #000000,
+        -2px 2px 0 #000000,
+        2px 2px 0 #000000;
+}
+.text-e-y150 {
+	font-size:150%;
+	line-height: 130%;
+	color: #FFFF00;
+	text-shadow:
+        0 2px 0 #000000,
+        2px 0 0 #000000,
+        0 -2px 0 #000000,
+        -2px 0 0 #000000,
+        -2px -2px 0 #000000,
+        2px -2px 0 #000000,
+        -2px 2px 0 #000000,
+        2px 2px 0 #000000;
+}
+.text-e-y200 {
+	font-size:200%;
+	line-height: 130%;
+	color: #FFFF00;
+	text-shadow:
+        0 2px 0 #000000,
+        2px 0 0 #000000,
+        0 -2px 0 #000000,
+        -2px 0 0 #000000,
+        -2px -2px 0 #000000,
+        2px -2px 0 #000000,
+        -2px 2px 0 #000000,
+        2px 2px 0 #000000;
+}
+.text-e-y250 {
+	font-size:250%;
+	line-height: 130%;
+	color: #FFFF00;
+	text-shadow:
+        0 2px 0 #000000,
+        2px 0 0 #000000,
+        0 -2px 0 #000000,
+        -2px 0 0 #000000,
+        -2px -2px 0 #000000,
+        2px -2px 0 #000000,
+        -2px 2px 0 #000000,
+        2px 2px 0 #000000;
+}
+.text-e-y300 {
+	font-size:300%;
+	line-height: 130%;
+	color: #FFFF00;
+	text-shadow:
+        0 2px 0 #000000,
+        2px 0 0 #000000,
+        0 -2px 0 #000000,
+        -2px 0 0 #000000,
+        -2px -2px 0 #000000,
+        2px -2px 0 #000000,
+        -2px 2px 0 #000000,
+        2px 2px 0 #000000;
+}
+.text-e-y350 {
+	font-size:350%;
+	line-height: 130%;
+	color: #FFFF00;
+	text-shadow:
+        0 2px 0 #000000,
+        2px 0 0 #000000,
+        0 -2px 0 #000000,
+        -2px 0 0 #000000,
+        -2px -2px 0 #000000,
+        2px -2px 0 #000000,
+        -2px 2px 0 #000000,
+        2px 2px 0 #000000;
+}
+.text-e-y400 {
+	font-size:400%;
+	line-height: 130%;
+	color: #FFFF00;
+	text-shadow:
+        0 2px 0 #000000,
+        2px 0 0 #000000,
+        0 -2px 0 #000000,
+        -2px 0 0 #000000,
+        -2px -2px 0 #000000,
+        2px -2px 0 #000000,
+        -2px 2px 0 #000000,
+        2px 2px 0 #000000;
+}
+
+/* フォントサイズ指定*/
+.size07 {
+	font-size: 0.438em;
+}
+.size08 {
+	font-size: 0.500em;
+}
+.size09 {
+	font-size: 0.563em;
+}
+.size10 {
+	font-size: 0.625em;
+}
+.size11 {
+	font-size: 0.688em;
+}
+.size12 {
+	font-size: 0.750em;
+}
+.size13 {
+	font-size: 0.813em;
+}
+.size14 {
+	font-size: 0.875em;
+}
+.size15 {
+	font-size: 0.938em;
+}
+.size16 {
+	font-size: 1.000em;
+}
+.size17 {
+	font-size: 1.063em;
+}
+.size18 {
+	font-size: 1.125em;
+}
+.size19 {
+	font-size: 1.188em;
+}
+.size20 {
+	font-size: 1.250em;
+}
+.size22 {
+	font-size: 1.375em;
+}
+.size24 {
+	font-size: 1.500em;
+}
+.size26 {
+	font-size: 1.625em;
+}
+.size28 {
+	font-size: 1.750em;
+}
+.size30 {
+	font-size: 1.875em;
+}
+.size32 {
+	font-size: 2.000em;
+}
+.size34 {
+	font-size: 2.215em;
+}
+.size36 {
+	font-size: 2.250em;
+}
+.size38 {
+	font-size: 2.375em;
+}
+.size40 {
+	font-size: 2.500em;
+}
+.size45 {
+	font-size: 2.813em;
+}
+.size50 {
+	font-size: 3.125em;
+}
+.size55 {
+	font-size: 3.438em;
+}
+.size60 {
+	font-size: 3.750em;
+}
+.size65 {
+	font-size: 4.063em;
+}
+.size70 {
+	font-size: 4.375em;
+}
+/* 緑*/
+.textg {
+	color: #39B54A;
+}
+
+@media screen and (max-width: 768px) {
+.text150{
+font-size: 140%;
+line-height: 140%;
+	}
+	.text120-b {
+	font-size:100%;
+	font-weight: bold;
+	line-height: 120%;
+		}
+.text150-b {
+	font-size:130%;
+	font-weight: bold;
+	line-height: 130%;
+}
+}
+
+.white02 {
+color: #ffffff;
+font-size: 0.8em;
+}
+@media screen and (max-width: 768px) {
+.white02 {
+color: #ffffff;
+font-size: 0.6em;
+	}
+}
+
+.text200-wb {
+	font-size:200%;
+	font-weight: bold;
+	line-height: 130%;
+	color: #ffffff;
+}
