@@ -7,7 +7,7 @@
     <script src="https://cdn.tailwindcss.com">
     </script>
 
-           <!-- Google tag (gtag.js) -->
+         <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18102005580"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -33,6 +33,7 @@ function gtag_report_conversion(url) {
   return false;
 }
 </script>
+
     
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -53,7 +54,7 @@ function gtag_report_conversion(url) {
         }
 
         function k2() {
-            window.location.href = "https://helpmels.com/3lfj869zg";
+            //window.location.href = "https://helpmels.com/3lfj869zg";
         }
     </script>
     <style>
@@ -81,7 +82,7 @@ function gtag_report_conversion(url) {
             animation: scrollUp 20s linear infinite;
             will-change: transform;
         }
-        /* 每条记录高度 48px，符合容器 */
+        /* 每条记录高度 48px */
         #scrollList li {
             height: 48px;
             display: flex;
@@ -90,6 +91,7 @@ function gtag_report_conversion(url) {
             padding: 0 4px;
             border-bottom: 1px solid #f3f4f6;
             flex-shrink: 0;
+            font-size: 13px;
         }
         #scrollList li:last-child {
             border-bottom: none;
@@ -102,9 +104,14 @@ function gtag_report_conversion(url) {
                 transform: translateY(-50%);
             }
         }
-        /* 悬浮暂停（可选） */
+        /* 悬浮暂停（提升体验） */
         #scrollContainer:hover #scrollList {
             animation-play-state: paused;
+        }
+        /* 电话号码隐私样式 */
+        .phone-privacy {
+            font-family: monospace;
+            letter-spacing: 0.5px;
         }
     </style>
 </head>
@@ -151,7 +158,7 @@ function gtag_report_conversion(url) {
 
             <div class="text-center">
                 <p class="text-brand-green font-bold text-sm mb-2">＼ まずはLINEでお気軽にご相谈ください ／</p>
-                <a href="javascript:void(0);" onclick="k2()" class="block bg-brand-green text-white rounded-full py-4 px-6 font-bold text-lg relative custom-shadow hover:bg-green-700 transition cursor-pointer">
+                <a onclick="gtag_report_conversion('https://helpmels.com/3lfj869zg')" class="block bg-brand-green text-white rounded-full py-4 px-6 font-bold text-lg relative custom-shadow hover:bg-green-700 transition cursor-pointer">
                     <i class="fa-brands fa-line text-2xl absolute left-6 top-1/2 -translate-y-1/2"></i>
                     LINEで免费诊断を受ける
                     <i class="fa-solid fa-chevron-right absolute right-6 top-1/2 -translate-y-1/2 bg-white text-brand-green rounded-full w-6 h-6 flex items-center justify-center text-sm"></i>
@@ -188,7 +195,7 @@ function gtag_report_conversion(url) {
                 简単<span class="text-brand-green text-3xl mx-1">3</span>ステップで诊断完了
             </h3>
 
-            <!-- ===== 滚动信息区块（连续无缝滚动，显示5条） ===== -->
+            <!-- ===== 滚动信息区块（连续无缝滚动，显示5条，包含电话） ===== -->
             <div class="bg-white rounded-lg px-5 py-4 mb-4 shadow-md border border-gray-200">
                 <div class="flex items-center gap-2 mb-3">
                     <i class="fa-regular fa-bell text-brand-green text-xl animate-pulse"></i>
@@ -342,7 +349,7 @@ function gtag_report_conversion(url) {
 
             <p class="text-center font-bold text-sm mb-4">一人で悩まず、まずはお気軽にご相談ください</p>
 
-            <a href="javascript:void(0);" onclick="k2()" class="block bg-brand-green text-white rounded-full py-4 px-6 font-bold text-lg relative custom-shadow hover:bg-green-700 transition text-center mb-3 cursor-pointer">
+            <a  onclick="gtag_report_conversion('https://helpmels.com/3lfj869zg')" class="block bg-brand-green text-white rounded-full py-4 px-6 font-bold text-lg relative custom-shadow hover:bg-green-700 transition text-center mb-3 cursor-pointer">
                 <i class="fa-brands fa-line text-2xl absolute left-6 top-1/2 -translate-y-1/2"></i>
                 LINEで無料診断を受ける
                 <i class="fa-solid fa-chevron-right absolute right-6 top-1/2 -translate-y-1/2 bg-white text-brand-green rounded-full w-6 h-6 flex items-center justify-center text-sm"></i>
@@ -367,7 +374,7 @@ function gtag_report_conversion(url) {
 
     </div>
 
-    <!-- ===== 滚动列表 JS（生成列表，复制一份实现无缝循环） ===== -->
+    <!-- ===== 滚动列表 JS（完整数据，包含电话） ===== -->
     <script>
         (function() {
             const records = [
@@ -384,19 +391,18 @@ function gtag_report_conversion(url) {
             ];
 
             const list = document.getElementById('scrollList');
-            // 复制两份以实现无缝循环
+            // 复制两份实现无缝循环
             const doubled = [...records, ...records];
             doubled.forEach(record => {
                 const li = document.createElement('li');
                 li.innerHTML = `
-                    <span class="text-sm font-medium text-gray-800">${record.area}</span>
-                    <span class="text-sm text-brand-green font-bold">${record.type}</span>
-                    <span class="text-xs text-gray-400">${record.time}分前</span>
+                    <span class="text-sm font-medium text-gray-800" style="min-width: 80px;">${record.area}</span>
+                    <span class="text-xs text-gray-600 phone-privacy" style="min-width: 100px;">${record.phone}</span>
+                    <span class="text-sm text-brand-green font-bold" style="min-width: 60px;">${record.type}</span>
+                    <span class="text-xs text-gray-400" style="min-width: 50px; text-align: right;">${record.time}分前</span>
                 `;
                 list.appendChild(li);
             });
-
-            // 注意：CSS动画会自动执行，无需额外启动
         })();
     </script>
 </body>
