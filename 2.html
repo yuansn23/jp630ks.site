@@ -152,44 +152,30 @@
             color: #289d38;
         }
 
-        /* ===== 分步表单过渡 ===== */
-        .step {
-            transition: opacity 0.35s ease, transform 0.35s ease;
+        /* 表单过渡 */
+        .form-fade {
+            transition: opacity 0.4s ease, transform 0.4s ease;
         }
-        .step.hidden {
-            display: none;
+        .form-fade.hidden {
             opacity: 0;
-            transform: translateY(10px);
+            transform: translateY(12px);
+            pointer-events: none;
+            height: 0;
+            overflow: hidden;
+            padding: 0;
+            margin: 0;
         }
-        .step:not(.hidden) {
-            display: block;
-            opacity: 1;
-            transform: translateY(0);
-        }
-
         .result-fade {
             transition: opacity 0.5s ease, transform 0.5s ease;
         }
         .result-fade.hidden {
-            display: none;
             opacity: 0;
             transform: translateY(20px);
-        }
-        .result-fade:not(.hidden) {
-            display: block;
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        .btn-disabled {
-            opacity: 0.5;
-            cursor: not-allowed;
             pointer-events: none;
-        }
-        .btn-enabled {
-            opacity: 1;
-            cursor: pointer;
-            pointer-events: auto;
+            height: 0;
+            overflow: hidden;
+            padding: 0;
+            margin: 0;
         }
     </style>
 </head>
@@ -316,36 +302,32 @@
         </section>
 
         <!-- ============================================================ -->
-        <!-- ===== ★ 最適化済み：分步引导式フォーム（制度一例の上） ===== -->
+        <!-- ===== ★ 新規追加：フォームモジュール（制度一例の上） ===== -->
         <!-- ============================================================ -->
         <section class="px-4 py-4">
             <div class="bg-white rounded-2xl shadow-md border border-gray-200 p-5">
 
-                <!-- タイトル＆説明（常時表示） -->
-                <h2 class="text-xl font-black text-gray-900 leading-tight mb-1">
-                    あなたが利用できる支援制度を無料で確認
-                </h2>
-                <p class="text-sm text-gray-600 leading-relaxed mb-3">
-                    薬代・光熱費・生活費の負担が増えている方向けに、<br />
-                    利用できる可能性のある支援制度を無料で確認できます。
-                </p>
-                <p class="text-xs text-gray-500 leading-relaxed mb-4 bg-gray-50 rounded-lg px-3 py-2 border border-gray-100">
-                    申請できる制度や条件は人によって異なります。<br />
-                    まずは簡単な質問に回答して、LINEで詳しい案内を受け取ってください。
-                    <br /><span class="text-[10px] text-gray-400">※申請・受給には条件があります。<br />※当サービスは制度確認・案内サポートです。</span>
-                </p>
+                <!-- ---- フォーム本体（初期表示） ---- -->
+                <div id="formContainer" class="form-fade">
 
-                <!-- ===== フォームステップコンテナ ===== -->
-                <div id="formContainer">
+                    <!-- タイトル -->
+                    <h2 class="text-xl font-black text-gray-900 leading-tight mb-1">
+                        あなたが利用できる支援制度を無料で確認
+                    </h2>
+                    <p class="text-sm text-gray-600 leading-relaxed mb-3">
+                        薬代・光熱費・生活費の負担が増えている方向けに、<br />
+                        利用できる可能性のある支援制度を無料で確認できます。
+                    </p>
+                    <p class="text-xs text-gray-500 leading-relaxed mb-4 bg-gray-50 rounded-lg px-3 py-2 border border-gray-100">
+                        申請できる制度や条件は人によって異なります。<br />
+                        まずは簡単な質問に回答して、LINEで詳しい案内を受け取ってください。
+                        <br /><span class="text-[10px] text-gray-400">※申請・受給には条件があります。<br />※当サービスは制度確認・案内サポートです。</span>
+                    </p>
 
-                    <!-- ====== ステップ 1 ====== -->
-                    <div id="step1" class="step">
-                        <div class="flex items-center gap-2 mb-3">
-                            <span class="bg-brand-green text-white text-xs font-bold px-3 py-1 rounded-full">ステップ 1/2</span>
-                            <span class="text-sm text-gray-500">質問①</span>
-                        </div>
-                        <p class="font-bold text-sm text-gray-800 mb-3">
-                            支援制度について知りたい内容を選んでください
+                    <!-- 質問1 -->
+                    <div class="mb-4">
+                        <p class="font-bold text-sm text-gray-800 mb-2 flex items-center gap-1">
+                            <span class="text-brand-green text-base">❶</span> 支援制度について知りたい内容を選んでください
                         </p>
                         <div class="grid grid-cols-2 gap-2" id="q1Options">
                             <div class="option-card" data-q="1" data-value="対象確認">
@@ -361,19 +343,12 @@
                                 <i class="fa-brands fa-line" style="color:#06c755;"></i> LINEで詳しく相談したい
                             </div>
                         </div>
-                        <button id="step1Next" class="mt-4 w-full bg-gray-300 text-white rounded-full py-3.5 font-bold text-base transition btn-disabled">
-                            <i class="fa-regular fa-arrow-right mr-2"></i> 次へ
-                        </button>
                     </div>
 
-                    <!-- ====== ステップ 2 ====== -->
-                    <div id="step2" class="step hidden">
-                        <div class="flex items-center gap-2 mb-3">
-                            <span class="bg-brand-green text-white text-xs font-bold px-3 py-1 rounded-full">ステップ 2/2</span>
-                            <span class="text-sm text-gray-500">質問②</span>
-                        </div>
-                        <p class="font-bold text-sm text-gray-800 mb-3">
-                            LINEで案内を受け取れますか？
+                    <!-- 質問2 -->
+                    <div class="mb-4">
+                        <p class="font-bold text-sm text-gray-800 mb-2 flex items-center gap-1">
+                            <span class="text-brand-green text-base">❷</span> LINEで案内を受け取れますか？
                         </p>
                         <div class="grid grid-cols-2 gap-2" id="q2Options">
                             <div class="option-card" data-q="2" data-value="はい">
@@ -383,27 +358,23 @@
                                 <i class="fa-regular fa-clock"></i> あとで確認したい
                             </div>
                         </div>
-
-                        <!-- プライバシー説明（ステップ2内に配置） -->
-                        <p class="text-[10px] text-gray-400 leading-relaxed mt-3 mb-3 bg-gray-50 rounded-lg px-3 py-2 border border-gray-100">
-                            <i class="fa-regular fa-lock mr-1"></i>
-                            ご入力いただいた情報は、支援制度の確認案内およびLINEでの連絡のために使用します。
-                            第三者へ無断で提供することはありません。
-                        </p>
-
-                        <div class="flex gap-2 mt-1">
-                            <button id="step2Back" class="w-1/3 bg-gray-200 text-gray-700 rounded-full py-3.5 font-bold text-sm hover:bg-gray-300 transition">
-                                <i class="fa-regular fa-arrow-left mr-1"></i> 戻る
-                            </button>
-                            <button id="step2Confirm" class="w-2/3 bg-gray-300 text-white rounded-full py-3.5 font-bold text-base transition btn-disabled">
-                                回答を確認する
-                            </button>
-                        </div>
                     </div>
-                </div>
-                <!-- ===== /フォームステップコンテナ ===== -->
 
-                <!-- ===== 結果エリア（初期非表示） ===== -->
+                    <!-- プライバシー説明 -->
+                    <p class="text-[10px] text-gray-400 leading-relaxed mb-4 bg-gray-50 rounded-lg px-3 py-2 border border-gray-100">
+                        <i class="fa-regular fa-lock mr-1"></i>
+                        ご入力いただいた情報は、支援制度の確認案内およびLINEでの連絡のために使用します。
+                        第三者へ無断で提供することはありません。
+                    </p>
+
+                    <!-- 確認ボタン -->
+                    <button id="confirmBtn" class="w-full bg-brand-green text-white rounded-full py-3.5 font-bold text-base hover:bg-green-700 transition shadow-md flex items-center justify-center gap-2">
+                        <i class="fa-regular fa-paper-plane"></i> 回答を確認する
+                    </button>
+                </div>
+                <!-- ---- /フォーム本体 ---- -->
+
+                <!-- ---- 結果エリア（初期非表示） ---- -->
                 <div id="resultContainer" class="result-fade hidden">
                     <div class="text-center py-2">
                         <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-3">
@@ -424,7 +395,7 @@
                                 LINEで確認すると、対象条件・必要書類・申請の流れをスムーズに案内できます。
                             </p>
                         </div>
-                        <!-- LINE CTA（同じ k2 / conversion を呼び出し） -->
+                        <!-- LINE CTA -->
                         <a onclick="gtag_report_conversion('https://helpmels.com/3lfj869zg')" class="block bg-brand-green text-white rounded-full py-4 px-6 font-bold text-lg relative custom-shadow hover:bg-green-700 transition cursor-pointer">
                             <i class="fa-brands fa-line text-2xl absolute left-6 top-1/2 -translate-y-1/2"></i>
                             LINEで無料確認する
@@ -433,7 +404,7 @@
                         <p class="text-[10px] text-gray-400 mt-3">＼ 最短当日にご案内します ／</p>
                     </div>
                 </div>
-                <!-- ===== /結果エリア ===== -->
+                <!-- ---- /結果エリア ---- -->
 
             </div>
         </section>
@@ -534,7 +505,7 @@
     <!-- /.page-container -->
 
     <!-- ============================================================ -->
-    <!-- ===== スクリプト：スクロールリスト + 分步フォーム制御 ===== -->
+    <!-- ===== スクリプト：スクロールリスト + フォーム制御 ===== -->
     <!-- ============================================================ -->
     <script>
         (function() {
@@ -556,44 +527,25 @@
             doubled.forEach(record => {
                 const li = document.createElement('li');
                 li.innerHTML = `
-                            <span class="text-sm font-medium text-gray-800" style="min-width:80px;">${record.area}</span>
-                            <span class="text-xs text-gray-600 phone-privacy" style="min-width:100px;">${record.phone}</span>
-                            <span class="text-sm text-brand-green font-bold" style="min-width:60px;">${record.type}</span>
-                            <span class="text-xs text-gray-400" style="min-width:50px;text-align:right;">${record.time}分前</span>
-                        `;
+                        <span class="text-sm font-medium text-gray-800" style="min-width:80px;">${record.area}</span>
+                        <span class="text-xs text-gray-600 phone-privacy" style="min-width:100px;">${record.phone}</span>
+                        <span class="text-sm text-brand-green font-bold" style="min-width:60px;">${record.type}</span>
+                        <span class="text-xs text-gray-400" style="min-width:50px;text-align:right;">${record.time}分前</span>
+                    `;
                 list.appendChild(li);
             });
 
-            // ---- 2. 分步表单控制 ----
-            const step1 = document.getElementById('step1');
-            const step2 = document.getElementById('step2');
-            const resultContainer = document.getElementById('resultContainer');
-
-            const step1Next = document.getElementById('step1Next');
-            const step2Back = document.getElementById('step2Back');
-            const step2Confirm = document.getElementById('step2Confirm');
-
-            // 获取所有选项
+            // ---- 2. フォーム制御 ----
             const q1Options = document.querySelectorAll('#q1Options .option-card');
             const q2Options = document.querySelectorAll('#q2Options .option-card');
+            const confirmBtn = document.getElementById('confirmBtn');
+            const formContainer = document.getElementById('formContainer');
+            const resultContainer = document.getElementById('resultContainer');
 
             let selectedQ1 = null;
             let selectedQ2 = null;
 
-            // 工具：启用/禁用按钮
-            function setButtonState(btn, enabled) {
-                if (enabled) {
-                    btn.classList.remove('btn-disabled');
-                    btn.classList.add('btn-enabled');
-                    btn.disabled = false;
-                } else {
-                    btn.classList.add('btn-disabled');
-                    btn.classList.remove('btn-enabled');
-                    btn.disabled = true;
-                }
-            }
-
-            // 设置选项点击（通用）
+            // 选项点击处理
             function setupOptions(options, callback) {
                 options.forEach(opt => {
                     opt.addEventListener('click', function() {
@@ -606,68 +558,40 @@
                 });
             }
 
-            // ---- Q1 逻辑 ----
-            setupOptions(q1Options, (val) => {
-                selectedQ1 = val;
-                // 只要选中了Q1，就启用 Step1 的下一步
-                setButtonState(step1Next, true);
-            });
+            setupOptions(q1Options, (val) => { selectedQ1 = val; });
+            setupOptions(q2Options, (val) => { selectedQ2 = val; });
 
-            // ---- Q2 逻辑 ----
-            setupOptions(q2Options, (val) => {
-                selectedQ2 = val;
-                // 只要选中了Q2，就启用 Step2 的确认按钮
-                setButtonState(step2Confirm, true);
-            });
-
-            // ---- Step1 → Step2 ----
-            step1Next.addEventListener('click', function() {
+            // 确认按钮
+            confirmBtn.addEventListener('click', function() {
                 if (!selectedQ1) {
-                    // 简单提醒：闪烁Q1区域
-                    const q1Area = document.getElementById('q1Options');
-                    q1Area.style.transition = 'background 0.3s';
-                    q1Area.style.background = '#fee2e2';
-                    setTimeout(() => { q1Area.style.background = ''; }, 600);
+                    // 简单提醒
+                    const firstQ = document.querySelector('#q1Options');
+                    firstQ.style.transition = 'background 0.3s';
+                    firstQ.style.background = '#fee2e2';
+                    setTimeout(() => { firstQ.style.background = ''; }, 600);
+                    // 滚动到问题1
+                    document.querySelector('#q1Options').scrollIntoView({ behavior: 'smooth', block: 'center' });
                     return;
                 }
-                // 切换步骤
-                step1.classList.add('hidden');
-                step2.classList.remove('hidden');
-                // 滚动到表单区域，方便用户看到第二步
-                document.getElementById('formContainer').scrollIntoView({ behavior: 'smooth', block: 'center' });
-            });
-
-            // ---- Step2 → Step1（戻る） ----
-            step2Back.addEventListener('click', function() {
-                step2.classList.add('hidden');
-                step1.classList.remove('hidden');
-                document.getElementById('formContainer').scrollIntoView({ behavior: 'smooth', block: 'center' });
-            });
-
-            // ---- Step2 → 结果 ----
-            step2Confirm.addEventListener('click', function() {
                 if (!selectedQ2) {
-                    const q2Area = document.getElementById('q2Options');
-                    q2Area.style.transition = 'background 0.3s';
-                    q2Area.style.background = '#fee2e2';
-                    setTimeout(() => { q2Area.style.background = ''; }, 600);
+                    const secondQ = document.querySelector('#q2Options');
+                    secondQ.style.transition = 'background 0.3s';
+                    secondQ.style.background = '#fee2e2';
+                    setTimeout(() => { secondQ.style.background = ''; }, 600);
+                    document.querySelector('#q2Options').scrollIntoView({ behavior: 'smooth', block: 'center' });
                     return;
                 }
-                // 隐藏Step2，显示结果
-                step2.classList.add('hidden');
+
+                // 切换显示
+                formContainer.classList.add('hidden');
                 resultContainer.classList.remove('hidden');
-                // 滚动到结果
+                // 滚动到结果区域
                 setTimeout(() => {
                     resultContainer.scrollIntoView({ behavior: 'smooth', block: 'center' });
                 }, 200);
             });
 
-            // 初始状态：禁用 Step1 Next（因为还没选Q1）
-            setButtonState(step1Next, false);
-            // Step2 Confirm 初始禁用
-            setButtonState(step2Confirm, false);
-
-            // 注意：结果中的 LINE 按钮已经带有 gtag_report_conversion，无需额外处理
+            // 如果用户点击结果中的LINE按钮，已经用 gtag_report_conversion 处理了
 
         })();
     </script>
