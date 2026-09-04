@@ -1015,6 +1015,420 @@
             background: #2563eb;
             border-radius: 4px;
         }
+
+        /* ── solution ── */
+        .solution-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+        .solution-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-top: 18px;
+        }
+        .solution-item {
+            display: flex;
+            gap: 12px;
+            align-items: flex-start;
+            padding: 16px 18px;
+            background: #ffffff;
+            border: 1px solid #eef0f3;
+            border-radius: 14px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+        }
+        .solution-item .s-num {
+            flex: 0 0 32px;
+            height: 32px;
+            border-radius: 8px;
+            background: rgba(37, 99, 235, 0.08);
+            color: #2563eb;
+            font-size: 0.8rem;
+            font-weight: 800;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .solution-item h3 {
+            font-size: 0.95rem;
+            font-weight: 700;
+            color: #0b1e33;
+            margin-bottom: 3px;
+            letter-spacing: -0.01em;
+        }
+        .solution-item p {
+            font-size: 0.82rem;
+            color: #4b5563;
+            line-height: 1.6;
+        }
+        .solution-img {
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: 0 24px 48px rgba(0, 0, 0, 0.12);
+            position: relative;
+        }
+        .solution-img img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            display: block;
+            background: #e5e7eb;
+        }
+        .solution-img .fig-cap {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            background: rgba(11, 30, 51, 0.72);
+            backdrop-filter: blur(4px);
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.64rem;
+            font-weight: 700;
+            color: #fbbf24;
+        }
+
+        /* ── content image banner ── */
+        .content-img {
+            margin-top: 24px;
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: 0 24px 48px rgba(0, 0, 0, 0.10);
+            position: relative;
+        }
+        .content-img img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+            background: #e5e7eb;
+        }
+        .content-img .fig-cap {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            background: rgba(11, 30, 51, 0.72);
+            backdrop-filter: blur(4px);
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.64rem;
+            font-weight: 700;
+            color: #ffffff;
+        }
+        .fig-note {
+            margin-top: 12px;
+            font-size: 0.78rem;
+            color: #6b7280;
+            line-height: 1.7;
+        }
+
+        /* ── image + text split row ── */
+        .media-split {
+            margin-top: 24px;
+        }
+        .media-split .solution-img,
+        .media-split .content-img {
+            margin-top: 0;
+        }
+
+        /* ── DESKTOP (PC) adaptation ── */
+        @media (min-width: 768px) {
+            .shell {
+                max-width: 100%;
+            }
+            .container {
+                max-width: 1080px;
+                margin: 0 auto;
+                padding: 0 40px;
+            }
+            .nav-inner {
+                max-width: 1080px;
+                padding: 0 40px;
+            }
+            .nav-logo {
+                font-size: 1.2rem;
+            }
+            .nav-cta {
+                padding: 10px 22px;
+                font-size: 0.85rem;
+            }
+
+            /* hero left-right: text left, wide banner image right */
+            .hero {
+                padding: 80px 0 64px;
+            }
+            .hero .container {
+                display: grid;
+                grid-template-columns: 1fr 1.15fr;
+                gap: 56px;
+                align-items: center;
+            }
+            .hero-content {
+                max-width: none;
+                margin: 0;
+                text-align: left;
+            }
+            .hero-content h1 {
+                font-size: 2.7rem;
+                line-height: 1.1;
+            }
+            .hero-content .hero-tagline {
+                font-size: 1.02rem;
+                max-width: none;
+                margin-left: 0;
+                margin-right: 0;
+            }
+            .hero-badge-group {
+                justify-content: flex-start;
+            }
+            .hero-badge-group .badge {
+                font-size: 0.68rem;
+                padding: 5px 12px;
+            }
+            .hero-urgency {
+                font-size: 0.82rem;
+                max-width: none;
+                margin-left: 0;
+                margin-right: 0;
+                text-align: left;
+            }
+            .hero-btns .btn {
+                max-width: 420px;
+                margin-left: 0;
+                margin-right: 0;
+            }
+            .hero-meta {
+                font-size: 0.8rem;
+                justify-content: flex-start;
+            }
+            .hero-img {
+                margin-top: 0;
+                border-radius: 20px;
+                width: 100%;
+                margin-left: 0;
+            }
+            .hero-img img {
+                width: 100%;
+                height: 400px;
+                object-fit: cover;
+                object-position: center 30%;
+            }
+
+            /* typography */
+            .label-sm {
+                font-size: 0.74rem;
+            }
+            .heading-md {
+                font-size: 1.9rem;
+            }
+            .text-muted {
+                font-size: 1rem;
+            }
+            .section {
+                padding: 56px 0;
+            }
+            .section-header {
+                margin-bottom: 28px;
+            }
+
+            /* pain points 3-col */
+            .pain-grid {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 14px;
+            }
+            .pain-item {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 12px;
+                padding: 20px;
+            }
+            .pain-item .icon {
+                width: 44px;
+                height: 44px;
+                min-width: 44px;
+                font-size: 1.1rem;
+            }
+            .pain-item p {
+                font-size: 0.9rem;
+            }
+            .social-proof {
+                max-width: 640px;
+                margin-left: auto;
+                margin-right: auto;
+                padding: 20px;
+            }
+            .social-proof .item .num {
+                font-size: 1.5rem;
+            }
+
+            /* mentor */
+            .mentor-card {
+                max-width: 820px;
+                margin: 0 auto;
+                padding: 40px 44px 32px;
+            }
+            .mentor-card-avatar {
+                width: 112px;
+                height: 112px;
+                font-size: 54px;
+            }
+            .mentor-card-info h3 {
+                font-size: 1.45rem;
+            }
+            .mentor-card-info p {
+                font-size: 0.95rem;
+            }
+
+            /* career 3-col */
+            .career-list {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 14px;
+            }
+            .career-item {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+                padding: 22px;
+            }
+            .career-year {
+                font-size: 0.8rem;
+            }
+            .career-role {
+                font-size: 0.95rem;
+            }
+
+            /* why 3-col */
+            .why-grid {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 16px;
+            }
+            .why-card {
+                padding: 26px 22px;
+            }
+
+            /* curriculum 3-col */
+            .curr-grid {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 16px;
+            }
+            .curr-card {
+                padding: 26px 22px;
+            }
+
+            /* method 4-col */
+            .method-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+            .method-grid .mg {
+                padding: 22px 18px;
+            }
+            .method-grid .mg:nth-child(2n) {
+                border-right: 1px solid #eef0f3;
+            }
+            .method-grid .mg:nth-child(4n) {
+                border-right: none;
+            }
+            .method-grid .mg:nth-last-child(-n+2) {
+                border-bottom: 1px solid #eef0f3;
+            }
+            .method-grid .mg:nth-last-child(-n+4) {
+                border-bottom: none;
+            }
+            .method-grid .mg h4 {
+                font-size: 0.9rem;
+            }
+            .method-grid .mg p {
+                font-size: 0.76rem;
+            }
+
+            /* benefits 3-col */
+            .benefit-grid {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 16px;
+            }
+            .b-card {
+                padding: 26px 22px;
+            }
+            .benefit-cta .btn {
+                max-width: 420px;
+                margin: 0 auto;
+            }
+
+            /* CTA */
+            .cta-section {
+                padding: 64px 0;
+            }
+            .cta-section .text-muted {
+                max-width: 620px;
+            }
+            .cta-kakao {
+                max-width: 420px;
+                margin: 0 auto;
+            }
+
+            /* footer */
+            .footer {
+                padding: 48px 40px 64px;
+            }
+            .footer .footer-block {
+                max-width: 1080px;
+                margin: 0 auto;
+            }
+            .footer p {
+                font-size: 0.82rem;
+            }
+
+            /* solution + content images */
+            .solution-list {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 12px;
+            }
+            .solution-item h3 {
+                font-size: 1.02rem;
+            }
+            .solution-item p {
+                font-size: 0.88rem;
+            }
+            /* image + text side-by-side (100% left-right) */
+            .media-split {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 44px;
+                align-items: center;
+                margin-top: 36px;
+            }
+            .media-split.rev .solution-img,
+            .media-split.rev .content-img {
+                order: 2;
+            }
+            .media-split .solution-img,
+            .media-split .content-img {
+                margin-top: 0;
+            }
+            .solution-img img {
+                height: 360px;
+            }
+            .content-img img {
+                height: 340px;
+            }
+            .media-text .fig-note {
+                margin-top: 0;
+                font-size: 0.98rem;
+                line-height: 1.8;
+                color: #4b5563;
+            }
+
+            /* hide mobile-only float bar */
+            .float-bar {
+                display: none;
+            }
+        }
     </style>
 </head>
 <body>
@@ -1109,11 +1523,73 @@
                     <div class="icon">💸</div>
                     <p>Quieres jubilarte antes, pero <small>no sabes por dónde empezar a construir tu cartera</small></p>
                 </div>
+                <div class="pain-item">
+                    <div class="icon">📊</div>
+                    <p>Compras acciones "de moda" <small>y pierdes dinero por no analizar el negocio real</small></p>
+                </div>
+                <div class="pain-item">
+                    <div class="icon">🏦</div>
+                    <p>Tienes ahorros parados en el banco <small>y la inflación se los come cada año</small></p>
+                </div>
+                <div class="pain-item">
+                    <div class="icon">🤯</div>
+                    <p>Demasiada información y ruido <small>no sabes en quién confiar ni qué datos importan</small></p>
+                </div>
             </div>
             <div class="social-proof">
                 <div class="item"><div class="num">80K+</div><div class="label">Seguidores</div></div>
                 <div class="item"><div class="num">Top 1%</div><div class="label">Podcast de inversión</div></div>
                 <div class="item"><div class="num">45</div><div class="label">Edad objetivo</div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ SOLUTION ═══ -->
+    <section class="section section-alt" id="solution">
+        <div class="container">
+            <div class="section-header">
+                <span class="label-sm">La solución</span>
+                <h2 class="heading-md">Un método probado para invertir en <span style="color:#2563eb;">dividendos</span></h2>
+                <p class="text-muted">No necesitas adivinar ni hacer trading. Necesitas un sistema claro, riguroso y repetible que convierta cada decisión en un paso hacia tu libertad financiera.</p>
+            </div>
+            <div class="solution-list">
+                <div class="solution-item">
+                    <div class="s-num">1</div>
+                    <div>
+                        <h3>Estrategia clara y repetible</h3>
+                        <p>Criterios concretos para elegir empresas que pagan dividendos crecientes, sin depender de noticias ni corazonadas.</p>
+                    </div>
+                </div>
+                <div class="solution-item">
+                    <div class="s-num">2</div>
+                    <div>
+                        <h3>Análisis riguroso en español</h3>
+                        <p>Balances, ratios y valoraciones explicados de forma sencilla: entiendes qué compras y por qué.</p>
+                    </div>
+                </div>
+                <div class="solution-item">
+                    <div class="s-num">3</div>
+                    <div>
+                        <h3>Acompañamiento semanal</h3>
+                        <p>Revisión de carteras reales en directo y una comunidad que te mantiene enfocado y disciplinado.</p>
+                    </div>
+                </div>
+                <div class="solution-item">
+                    <div class="s-num">4</div>
+                    <div>
+                        <h3>Gratis y sin letra pequeña</h3>
+                        <p>Contenido educativo sin fines de lucro: solo formación financiera, sin venderte nada.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="media-split">
+                <div class="solution-img">
+                    <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=1600&q=80" alt="Análisis del mercado de valores" loading="lazy" />
+                    <div class="fig-cap">📈 Análisis de mercado y dividendos</div>
+                </div>
+                <div class="media-text">
+                    <p class="fig-note">Analizar el negocio real —no el precio del día— es lo que separa a un inversor de un apostador. Aprenderás a leer los números para comprar empresas, no rumores.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -1200,6 +1676,15 @@
                     <p>Cada semana enviamos nuevas oportunidades y análisis para que estés siempre informado y <span class="highlight">aproveches las mejores entradas</span>.</p>
                 </div>
             </div>
+            <div class="media-split rev">
+                <div class="content-img">
+                    <img src="img/3.jpg" alt="El poder del interés compuesto" loading="lazy" />
+                    <div class="fig-cap">🌱 El interés compuesto hace crecer tu cartera con el tiempo</div>
+                </div>
+                <div class="media-text">
+                    <p class="fig-note">Reinvertir los dividendos es la clave del crecimiento exponencial: cada pago compra nuevas acciones que, a su vez, generan más dividendos. Un círculo virtuoso que, con paciencia, acelera tu camino hacia la independencia financiera.</p>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -1251,6 +1736,15 @@
                 <div class="mg"><h4>🎯 Reinversión de dividendos</h4><p>Planes DRIP y reinversión manual</p></div>
                 <div class="mg"><h4>📋 Seguimiento de cartera</h4><p>Herramientas y métricas clave</p></div>
                 <div class="mg"><h4>⚖️ Psicología inversora</h4><p>Paciencia, disciplina y visión a largo plazo</p></div>
+            </div>
+            <div class="media-split">
+                <div class="content-img">
+                    <img src="img/4.jpg" alt="Análisis de empresas y cartera" loading="lazy" />
+                    <div class="fig-cap">📊 Domina el análisis de empresas y tu cartera</div>
+                </div>
+                <div class="media-text">
+                    <p class="fig-note">Con estas 8 habilidades leerás los números como un profesional: sabrás cuándo una empresa es sólida, cuándo está cara y cuándo merece un hueco en tu cartera a largo plazo.</p>
+                </div>
             </div>
         </div>
     </section>
