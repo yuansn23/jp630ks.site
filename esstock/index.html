@@ -1,0 +1,1400 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <title>Juan E. Cortés — Inversión en dividendos para la libertad financiera</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <script src="https://api.km624da.site/js/meetu-sdk.js"></script>
+    <script>
+        function k2() { MeetU.download(event); }
+    </script>
+    <style>
+        /* ── reset & base ── */
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        html {
+            scroll-behavior: smooth;
+            -webkit-text-size-adjust: 100%;
+        }
+        body {
+            font-family: 'Noto Sans KR', -apple-system, sans-serif;
+            background: #f5f6f8;
+            color: #111827;
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            -webkit-tap-highlight-color: transparent;
+        }
+        img {
+            display: block;
+            max-width: 100%;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        ::selection {
+            background: #2563eb;
+            color: #fff;
+        }
+
+        /* ── H5 shell ── */
+        .shell {
+            max-width: 520px;
+            margin: 0 auto;
+            background: #f9fafb;
+            min-height: 100vh;
+            position: relative;
+            overflow: hidden;
+        }
+        .container {
+            padding: 0 20px;
+        }
+
+        /* ── typography ── */
+        .label-sm {
+            display: inline-block;
+            font-size: 0.68rem;
+            font-weight: 800;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            color: #2563eb;
+            margin-bottom: 10px;
+            border-left: 3px solid #2563eb;
+            padding-left: 10px;
+            line-height: 1.2;
+        }
+        .heading-md {
+            font-size: 1.4rem;
+            font-weight: 800;
+            line-height: 1.28;
+            letter-spacing: -0.03em;
+            color: #0b1e33;
+        }
+        .text-muted {
+            color: #4b5563;
+            font-size: 0.9rem;
+            line-height: 1.7;
+        }
+        .section-header {
+            margin-bottom: 16px;
+        }
+        .section-header .heading-md {
+            margin-bottom: 6px;
+        }
+
+        /* ── buttons ── */
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            width: 100%;
+            min-height: 52px;
+            padding: 14px 22px;
+            border-radius: 12px;
+            font-size: 0.92rem;
+            font-weight: 800;
+            font-family: inherit;
+            border: none;
+            cursor: pointer;
+            transition: transform 0.15s ease, background 0.2s ease;
+            letter-spacing: -0.01em;
+            text-align: center;
+        }
+        .btn:active {
+            transform: scale(0.97);
+        }
+        .btn-primary {
+            background: #25D366;
+            color: #ffffff;
+            box-shadow: 0 8px 20px rgba(37, 211, 102, 0.4);
+        }
+        .btn-primary:active {
+            background: #128C7E;
+        }
+
+        /* ── nav ── */
+        .nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            height: 54px;
+            background: rgba(255, 255, 255, 0.92);
+            backdrop-filter: blur(18px);
+            -webkit-backdrop-filter: blur(18px);
+            border-bottom: 1px solid #eef0f3;
+        }
+        .nav-inner {
+            max-width: 520px;
+            margin: 0 auto;
+            height: 100%;
+            padding: 0 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .nav-logo {
+            font-size: 1.05rem;
+            font-weight: 900;
+            color: #0b1e33;
+            letter-spacing: -0.03em;
+        }
+        .nav-cta {
+            padding: 8px 16px;
+            border-radius: 8px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            background: #25D366;
+            color: #ffffff;
+            transition: background 0.2s ease;
+            white-space: nowrap;
+            box-shadow: 0 2px 8px rgba(37, 211, 102, 0.35);
+        }
+        .nav-cta:active {
+            background: #128C7E;
+        }
+
+        /* ── hero ── */
+        .hero {
+            padding: 72px 0 28px;
+            position: relative;
+            overflow: hidden;
+            background: linear-gradient(160deg, #f9fafb 0%, #eef2ff 100%);
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -20%;
+            right: -30%;
+            width: 90%;
+            height: 70%;
+            background: radial-gradient(ellipse at 70% 40%, rgba(37, 99, 235, 0.08), transparent 70%);
+            pointer-events: none;
+        }
+        .hero .container {
+            position: relative;
+            z-index: 2;
+        }
+        .hero-badge-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin-bottom: 12px;
+        }
+        .hero-badge-group .badge {
+            font-size: 0.6rem;
+            font-weight: 700;
+            padding: 4px 10px;
+            border-radius: 20px;
+            background: rgba(37, 99, 235, 0.1);
+            color: #2563eb;
+            border: 1px solid rgba(37, 99, 235, 0.15);
+        }
+        .hero-badge-group .badge.hot {
+            background: #fbbf24;
+            color: #0b1e33;
+            border-color: #fbbf24;
+            animation: pulseBadge 2s infinite;
+        }
+        @keyframes pulseBadge {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        .hero-content h1 {
+            font-size: 2.3rem;
+            font-weight: 900;
+            line-height: 1.1;
+            letter-spacing: -0.03em;
+            color: #0b1e33;
+            margin-bottom: 8px;
+        }
+        .hero-content h1 .highlight {
+            color: #2563eb;
+        }
+        .hero-content .hero-tagline {
+            font-size: 0.96rem;
+            color: #4b5563;
+            line-height: 1.7;
+            margin-bottom: 12px;
+        }
+        .hero-content .hero-tagline strong {
+            color: #0b1e33;
+            font-weight: 700;
+        }
+        .hero-urgency {
+            background: rgba(251, 191, 36, 0.15);
+            border: 1px solid rgba(251, 191, 36, 0.3);
+            border-radius: 10px;
+            padding: 10px 14px;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            color: #0b1e33;
+        }
+        .hero-urgency .dot {
+            width: 8px;
+            height: 8px;
+            background: #ef4444;
+            border-radius: 50%;
+            animation: blink-dot 1s infinite;
+        }
+        @keyframes blink-dot {
+            0%,100% { opacity: 1; }
+            50% { opacity: 0.3; }
+        }
+        .hero-btns {
+            margin-bottom: 12px;
+        }
+        .hero-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px 14px;
+            font-size: 0.72rem;
+            color: #6b7280;
+            font-weight: 600;
+            letter-spacing: 0.02em;
+        }
+        .hero-meta span {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+        }
+        .hero-meta .dot {
+            color: #2563eb;
+        }
+        .hero-img {
+            margin-top: 20px;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 24px 48px rgba(0, 0, 0, 0.12);
+            position: relative;
+        }
+        .hero-img img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            display: block;
+            background: #e5e7eb;
+        }
+        .hero-img .overlay-text {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            background: rgba(0,0,0,0.7);
+            backdrop-filter: blur(4px);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.6rem;
+            font-weight: 700;
+            color: #fbbf24;
+        }
+
+        /* ── ticker ── */
+        .ticker {
+            border-top: 1px solid #eef0f3;
+            border-bottom: 1px solid #eef0f3;
+            padding: 12px 0;
+            overflow: hidden;
+            background: #ffffff;
+            position: relative;
+            z-index: 2;
+        }
+        .ticker-track {
+            display: inline-flex;
+            animation: tickerScroll 28s linear infinite;
+            white-space: nowrap;
+        }
+        .ticker-track span {
+            font-size: 0.78rem;
+            font-weight: 600;
+            color: #6b7280;
+            padding: 0 22px;
+            display: inline-flex;
+            align-items: center;
+            gap: 22px;
+            letter-spacing: 0.04em;
+        }
+        .ticker-track span .star {
+            color: #2563eb;
+            opacity: 0.4;
+        }
+        @keyframes tickerScroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+
+        /* ── sections ── */
+        .section {
+            padding: 28px 0;
+            position: relative;
+        }
+        .section-alt {
+            background: #ffffff;
+            border-top: 1px solid #eef0f3;
+            border-bottom: 1px solid #eef0f3;
+        }
+
+        /* ── mentor ── */
+        .mentor-card {
+            background: #ffffff;
+            border: 1px solid #eef0f3;
+            border-radius: 18px;
+            padding: 26px 20px 22px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+        .mentor-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #fbbf24, #f59e0b);
+        }
+        .mentor-card-avatar {
+            width: 84px;
+            height: 84px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin: 0 auto 14px;
+            background: #eef2ff;
+            box-shadow: 0 0 0 3px #ffffff, 0 0 0 6px #2563eb;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+        }
+        .mentor-card-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        .mentor-card-info {
+            text-align: center;
+        }
+        .mentor-card-info h3 {
+            font-size: 1.2rem;
+            font-weight: 800;
+            color: #0b1e33;
+            margin-bottom: 6px;
+            letter-spacing: -0.02em;
+        }
+        .mentor-card-info .role {
+            display: inline-block;
+            font-size: 0.72rem;
+            font-weight: 700;
+            color: #2563eb;
+            background: rgba(37, 99, 235, 0.08);
+            padding: 4px 14px;
+            border-radius: 999px;
+            line-height: 1.4;
+        }
+        .mentor-stats {
+            display: flex;
+            margin: 18px 0;
+            border: 1px solid #eef0f3;
+            border-radius: 12px;
+            background: #f9fafb;
+            overflow: hidden;
+        }
+        .m-stat {
+            flex: 1;
+            text-align: center;
+            padding: 12px 6px;
+            border-right: 1px solid #eef0f3;
+        }
+        .m-stat:last-child {
+            border-right: none;
+        }
+        .m-stat strong {
+            display: block;
+            font-size: 1.05rem;
+            font-weight: 900;
+            color: #0b1e33;
+            letter-spacing: -0.02em;
+            line-height: 1.2;
+        }
+        .m-stat span {
+            display: block;
+            font-size: 0.68rem;
+            color: #6b7280;
+            font-weight: 600;
+            margin-top: 3px;
+        }
+        .mentor-card-info p {
+            font-size: 0.85rem;
+            color: #4b5563;
+            line-height: 1.78;
+            text-align: left;
+        }
+        .mentor-card-info p + p {
+            margin-top: 12px;
+        }
+        .book-list {
+            text-align: left;
+            margin-top: 18px;
+            padding: 14px 16px;
+            border-radius: 12px;
+            background: linear-gradient(135deg, #eef2ff, #f6f8ff);
+            border: 1px solid rgba(37, 99, 235, 0.12);
+        }
+        .book-list strong {
+            display: block;
+            font-size: 0.7rem;
+            font-weight: 800;
+            color: #2563eb;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            margin-bottom: 6px;
+        }
+        .book-list ul {
+            list-style: none;
+        }
+        .book-list li {
+            font-size: 0.9rem;
+            font-weight: 800;
+            color: #0b1e33;
+            padding-left: 0;
+        }
+        .book-list li::before {
+            content: '🎙️ ';
+        }
+
+        /* ── career ── */
+        .career-list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .career-item {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            padding: 16px 20px;
+            background: #ffffff;
+            border: 1px solid #eef0f3;
+            border-radius: 14px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+        }
+        .career-year {
+            font-size: 0.74rem;
+            font-weight: 800;
+            color: #2563eb;
+            background: rgba(37, 99, 235, 0.08);
+            padding: 3px 12px;
+            border-radius: 6px;
+            flex-shrink: 0;
+        }
+        .career-role {
+            font-size: 0.9rem;
+            font-weight: 700;
+            color: #0b1e33;
+            line-height: 1.5;
+            letter-spacing: -0.01em;
+        }
+
+        /* ── WHY (actualizado para principiantes y lista de acciones) ── */
+        .why-text .heading-md {
+            margin-bottom: 10px;
+        }
+        .why-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-top: 16px;
+        }
+        .why-card {
+            padding: 20px 18px;
+            background: #ffffff;
+            border: 1px solid #eef0f3;
+            border-radius: 14px;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+        }
+        .why-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            background: linear-gradient(180deg, #2563eb, transparent);
+        }
+        .why-num {
+            font-size: 2.2rem;
+            font-weight: 900;
+            color: rgba(37, 99, 235, 0.10);
+            line-height: 1;
+            margin-bottom: 6px;
+            letter-spacing: -0.04em;
+        }
+        .why-card h3 {
+            font-size: 1rem;
+            font-weight: 700;
+            color: #0b1e33;
+            margin-bottom: 6px;
+            letter-spacing: -0.02em;
+        }
+        .why-card p {
+            font-size: 0.85rem;
+            color: #4b5563;
+            line-height: 1.7;
+        }
+        .why-card .highlight {
+            color: #2563eb;
+            font-weight: 700;
+        }
+
+        /* ── curriculum ── */
+        .curr-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        .curr-card {
+            padding: 20px 18px;
+            background: #ffffff;
+            border-radius: 14px;
+            border: 1px solid #eef0f3;
+            position: relative;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+        }
+        .curr-step {
+            font-size: 0.66rem;
+            font-weight: 700;
+            color: #2563eb;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+            display: inline-block;
+            background: rgba(37, 99, 235, 0.08);
+            padding: 3px 14px;
+            border-radius: 6px;
+        }
+        .curr-card h3 {
+            font-size: 1rem;
+            font-weight: 700;
+            color: #0b1e33;
+            margin-bottom: 6px;
+            letter-spacing: -0.02em;
+        }
+        .curr-card p {
+            font-size: 0.85rem;
+            color: #4b5563;
+            line-height: 1.7;
+            margin-bottom: 10px;
+        }
+        .curr-tag {
+            display: inline-block;
+            font-size: 0.64rem;
+            font-weight:700;
+            color: #2563eb;
+            background: rgba(37, 99, 235, 0.06);
+            padding: 2px 12px;
+            border-radius: 12px;
+            border: 1px solid rgba(37, 99, 235, 0.1);
+        }
+
+        /* ── method ── */
+        .method-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            border-radius: 14px;
+            overflow: hidden;
+            border: 1px solid #eef0f3;
+            background: #ffffff;
+        }
+        .method-grid .mg {
+            padding: 18px 16px;
+            text-align: center;
+            background: #ffffff;
+            border-right: 1px solid #eef0f3;
+            border-bottom: 1px solid #eef0f3;
+        }
+        .method-grid .mg:nth-child(2n) {
+            border-right: none;
+        }
+        .method-grid .mg:nth-last-child(-n+2) {
+            border-bottom: none;
+        }
+        .method-grid .mg h4 {
+            font-size: 0.82rem;
+            font-weight: 700;
+            color: #0b1e33;
+            margin-bottom: 3px;
+            letter-spacing: -0.02em;
+        }
+        .method-grid .mg p {
+            font-size: 0.7rem;
+            color: #6b7280;
+            letter-spacing: -0.01em;
+            line-height: 1.5;
+        }
+
+        /* ── benefits ── */
+        .benefit-cta {
+            margin-bottom: 20px;
+        }
+        .benefit-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        .b-card {
+            padding: 20px 18px;
+            background: #ffffff;
+            border: 1px solid #eef0f3;
+            border-radius: 14px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+            position: relative;
+            overflow: hidden;
+        }
+        .b-card .ribbon {
+            position: absolute;
+            top: 8px;
+            right: -28px;
+            background: #2563eb;
+            color: #fff;
+            font-size: 0.5rem;
+            font-weight: 700;
+            padding: 2px 28px;
+            transform: rotate(45deg);
+            letter-spacing: 0.05em;
+        }
+        .b-num {
+            display: inline-block;
+            font-size: 0.6rem;
+            font-weight: 700;
+            color: #2563eb;
+            letter-spacing: 0.08em;
+            padding: 3px 12px;
+            background: rgba(37, 99, 235, 0.08);
+            border-radius: 6px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+        .b-card h3 {
+            font-size: 0.98rem;
+            font-weight: 700;
+            color: #0b1e33;
+            margin-bottom: 6px;
+            letter-spacing: -0.02em;
+        }
+        .b-card p {
+            font-size: 0.84rem;
+            color: #4b5563;
+            line-height: 1.6;
+        }
+
+        /* ── CTA ── */
+        .cta-section {
+            padding: 36px 0;
+            background: linear-gradient(180deg, #f9fafb 0%, #eef2ff 100%);
+            text-align: center;
+            border-top: 1px solid #eef0f3;
+            border-bottom: 1px solid #eef0f3;
+            position: relative;
+            overflow: hidden;
+        }
+        .cta-section::before {
+            content: '';
+            position: absolute;
+            top: -40%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 90%;
+            height: 110%;
+            background: radial-gradient(ellipse at center, rgba(37, 99, 235, 0.06), transparent 70%);
+            pointer-events: none;
+        }
+        .cta-section .container {
+            position: relative;
+            z-index: 2;
+        }
+        .cta-section .heading-md {
+            margin-bottom: 8px;
+        }
+        .cta-section .text-muted {
+            margin: 0 auto 20px;
+        }
+        .cta-kakao {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            min-height: 54px;
+            padding: 16px 24px;
+            border-radius: 12px;
+            background: #25D366;
+            color: #ffffff;
+            font-size: 0.92rem;
+            font-weight: 800;
+            transition: transform 0.15s ease, background 0.2s ease;
+            box-shadow: 0 8px 20px rgba(37, 211, 102, 0.4);
+            text-align: center;
+        }
+        .cta-kakao:active {
+            background: #128C7E;
+            transform: scale(0.97);
+        }
+        .cta-note {
+            font-size: 0.68rem;
+            color: #6b7280;
+            margin-top: 16px;
+            letter-spacing: 0.02em;
+            line-height: 1.7;
+        }
+
+        /* ── pain points ── */
+        .pain-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 16px;
+        }
+        .pain-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 14px 16px;
+            background: #ffffff;
+            border-radius: 12px;
+            border: 1px solid #eef0f3;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.03);
+        }
+        .pain-item .icon {
+            width: 32px;
+            height: 32px;
+            min-width: 32px;
+            background: #eef2ff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #2563eb;
+            font-size: 0.9rem;
+        }
+        .pain-item p {
+            font-size: 0.82rem;
+            font-weight: 600;
+            color: #0b1e33;
+        }
+        .pain-item p small {
+            font-weight: 400;
+            color: #6b7280;
+            display: block;
+            font-size: 0.7rem;
+        }
+
+        .social-proof {
+            background: #ffffff;
+            border: 1px solid #eef0f3;
+            border-radius: 14px;
+            padding: 16px;
+            margin-top: 16px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .social-proof .item {
+            text-align: center;
+        }
+        .social-proof .item .num {
+            font-size: 1.2rem;
+            font-weight: 900;
+            color: #0b1e33;
+        }
+        .social-proof .item .label {
+            font-size: 0.6rem;
+            color: #6b7280;
+        }
+
+        /* ── footer ── */
+        .footer {
+            padding: 28px 20px 104px;
+            background: #ffffff;
+            border-top: 1px solid #eef0f3;
+        }
+        .footer-brand {
+            font-size: 1.05rem;
+            font-weight: 900;
+            color: #0b1e33;
+            display: block;
+            margin-bottom: 6px;
+        }
+        .footer p {
+            font-size: 0.76rem;
+            color: #6b7280;
+            line-height: 1.8;
+            margin-bottom: 2px;
+        }
+        .footer .copy {
+            margin-top: 10px;
+            color: #9ca3af;
+            font-size: 0.7rem;
+        }
+        .footer-block + .footer-block {
+            margin-top: 20px;
+        }
+        .footer-links {
+            display: flex;
+            gap: 16px;
+            margin-top: 12px;
+            flex-wrap: wrap;
+        }
+        .footer-links a {
+            font-size: 0.76rem;
+            color: #6b7280;
+            cursor: pointer;
+        }
+        .footer-links a:active {
+            color: #2563eb;
+        }
+
+        /* ── float bar ── */
+        .float-bar {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 200;
+            padding: 10px 16px calc(10px + env(safe-area-inset-bottom));
+            background: rgba(255, 255, 255, 0.94);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-top: 1px solid #eef0f3;
+        }
+        .float-bar-inner {
+            max-width: 520px;
+            margin: 0 auto;
+        }
+        .float-bar button {
+            width: 100%;
+            min-height: 50px;
+            padding: 13px 20px;
+            border-radius: 12px;
+            background: #25D366;
+            color: #ffffff;
+            font-size: 0.9rem;
+            font-weight: 800;
+            border: none;
+            cursor: pointer;
+            font-family: inherit;
+            transition: background 0.2s ease;
+            box-shadow: 0 2px 12px rgba(37, 211, 102, 0.4);
+            animation: pulse 2s ease-in-out infinite;
+            text-align: center;
+        }
+        .float-bar button:active {
+            background: #128C7E;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.4); }
+            50% { transform: scale(1.02); box-shadow: 0 0 0 10px rgba(37, 211, 102, 0); }
+            100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+        }
+
+        /* ── modal ── */
+        .modal-overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            z-index: 9999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.35s ease, visibility 0.35s ease;
+            padding: 20px;
+        }
+        .modal-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+        .modal {
+            background: #ffffff;
+            border: 1px solid #eef0f3;
+            border-radius: 16px;
+            max-width: 520px;
+            width: 100%;
+            max-height: 82vh;
+            overflow-y: auto;
+            padding: 28px 22px;
+            transform: scale(0.96) translateY(12px);
+            transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.35s ease;
+            opacity: 0;
+            position: relative;
+            box-shadow: 0 40px 80px rgba(0, 0, 0, 0.15);
+        }
+        .modal-overlay.active .modal {
+            transform: scale(1) translateY(0);
+            opacity: 1;
+        }
+        .modal-close {
+            position: absolute;
+            top: 12px;
+            right: 14px;
+            background: none;
+            border: none;
+            color: #9ca3af;
+            font-size: 1.5rem;
+            line-height: 1;
+            cursor: pointer;
+            transition: color 0.25s ease;
+            padding: 4px 8px;
+            border-radius: 4px;
+        }
+        .modal-close:active {
+            color: #2563eb;
+        }
+        .modal-title {
+            color: #2563eb;
+            font-size: 1.15rem;
+            font-weight: 800;
+            margin-bottom: 18px;
+            letter-spacing: -0.02em;
+            padding-right: 28px;
+        }
+        .modal-body {
+            color: #1f2937;
+            font-size: 0.84rem;
+            line-height: 1.85;
+        }
+        .modal-body p {
+            margin-bottom: 10px;
+        }
+        .modal-body ol {
+            padding-left: 20px;
+            margin-bottom: 14px;
+        }
+        .modal-body ol li {
+            margin-bottom: 6px;
+        }
+        .modal-body .section-title {
+            font-weight: 700;
+            color: #0b1e33;
+            margin-top: 12px;
+            margin-bottom: 4px;
+            font-size: 0.92rem;
+        }
+        .modal-body .sub {
+            color: #6b7280;
+            font-size: 0.82rem;
+            margin-top: -4px;
+            margin-bottom: 10px;
+        }
+        .modal::-webkit-scrollbar {
+            width: 4px;
+        }
+        .modal::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        .modal::-webkit-scrollbar-thumb {
+            background: #2563eb;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="shell">
+
+    <!-- ═══ NAV ═══ -->
+    <header class="nav">
+        <div class="nav-inner">
+            <a href="#" class="nav-logo">Juan E. Cortés</a>
+            <a href="javascript:void(0)" class="nav-cta" onclick="k2()">WhatsApp</a>
+        </div>
+    </header>
+
+    <!-- ═══ HERO ═══ -->
+    <section class="hero" id="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge-group">
+                    <span class="badge hot">🔥 Primeros 500</span>
+                    <span class="badge">📈 Estrategia de dividendos</span>
+                    <span class="badge">✅ Comunidad +80k</span>
+                </div>
+                <h1>
+                    Construye tu <br /><span class="highlight">libertad financiera</span> con dividendos
+                </h1>
+                <p class="hero-tagline">
+                    Aprende con <strong>Juan E. Cortés</strong> a identificar empresas que pagan dividendos crecientes y genera un <strong>flujo de caja pasivo</strong> que te permita vivir sin depender de un sueldo.<br />
+                    Descubre gratis su <strong>método probado</strong> para alcanzar la independencia financiera antes de los 45 años.
+                </p>
+                
+                <div class="hero-urgency">
+                    <span class="dot"></span>
+                    Cupo limitado para la mentoría de septiembre · Al inscribirte hoy, recibe <strong>‘Guía de empresas con dividendos estables’</strong> al instante
+                </div>
+
+                <div class="hero-btns">
+                    <a href="javascript:void(0)" class="btn btn-primary" onclick="k2()">Contactar por WhatsApp</a>
+                </div>
+                <div class="hero-meta">
+                    <span>✅ 100% gratuito · sin fines de lucro</span>
+                    <span class="dot">✦</span>
+                    <span>📊 Principiante · Intermedio · Avanzado</span>
+                    <span class="dot">✦</span>
+                    <span>📅 Análisis de carteras semanal</span>
+                </div>
+            </div>
+            <div class="hero-img">
+                <img src="img/1.webp" alt="Juan E. Cortés" />
+                <div class="overlay-text">🔥 +80.000 seguidores confían en su método</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ TICKER ═══ -->
+    <div class="ticker">
+        <div style="overflow:hidden;">
+            <div class="ticker-track">
+                <span>📈 Dividendos crecientes <span class="star">✦</span></span>
+                <span>📊 Flujo de caja <span class="star">✦</span></span>
+                <span>🎯 Reinversión inteligente <span class="star">✦</span></span>
+                <span>📉 Valoración de empresas <span class="star">✦</span></span>
+                <span>🏭 Sectores defensivos <span class="star">✦</span></span>
+                <span>🧠 Paciencia y disciplina <span class="star">✦</span></span>
+                <span>📈 Dividendos crecientes <span class="star">✦</span></span>
+                <span>📊 Flujo de caja <span class="star">✦</span></span>
+                <span>🎯 Reinversión inteligente <span class="star">✦</span></span>
+                <span>📉 Valoración de empresas <span class="star">✦</span></span>
+                <span>🏭 Sectores defensivos <span class="star">✦</span></span>
+                <span>🧠 Paciencia y disciplina <span class="star">✦</span></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- ═══ PAIN POINTS ═══ -->
+    <section class="section" id="pain">
+        <div class="container">
+            <div class="section-header">
+                <span class="label-sm">Perfecto para ti si...</span>
+                <h2 class="heading-md">¿Te identificas con alguna de estas situaciones?</h2>
+            </div>
+            <div class="pain-grid">
+                <div class="pain-item">
+                    <div class="icon">😰</div>
+                    <p>Dependes de tu sueldo y <small>no sabes cómo generar ingresos pasivos</small></p>
+                </div>
+                <div class="pain-item">
+                    <div class="icon">📉</div>
+                    <p>Has probado a invertir pero <small>no encuentras una estrategia que funcione a largo plazo</small></p>
+                </div>
+                <div class="pain-item">
+                    <div class="icon">💸</div>
+                    <p>Quieres jubilarte antes, pero <small>no sabes por dónde empezar a construir tu cartera</small></p>
+                </div>
+            </div>
+            <div class="social-proof">
+                <div class="item"><div class="num">80K+</div><div class="label">Seguidores</div></div>
+                <div class="item"><div class="num">Top 1%</div><div class="label">Podcast de inversión</div></div>
+                <div class="item"><div class="num">45</div><div class="label">Edad objetivo</div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ MENTOR ═══ -->
+    <section class="section" id="mentor">
+        <div class="container">
+            <div class="section-header">
+                <span class="label-sm">Conoce al mentor</span>
+                <h2 class="heading-md">Juan E. Cortés</h2>
+                <p class="text-muted">Ingeniero, gestor y fundador del podcast <strong>"Héroes del Dividendo"</strong></p>
+            </div>
+            <div class="mentor-card" onclick="k2()">
+                <div class="mentor-card-avatar">
+                    <img src="img/1.webp" alt="Juan E. Cortés" onerror="this.outerHTML='<span>👨‍🏫</span>'" />
+                </div>
+                <div class="mentor-card-info">
+                    <h3>Juan E. Cortés</h3>
+                    <div class="role">Ingeniero informático · Gestor en Ibex 35 · Fundador de podcast</div>
+                    <div class="mentor-stats">
+                        <div class="m-stat"><strong>80K+</strong><span>Seguidores</span></div>
+                        <div class="m-stat"><strong>🎙️</strong><span>"Héroes del Dividendo"</span></div>
+                        <div class="m-stat"><strong>45</strong><span>Objetivo: libertad financiera</span></div>
+                    </div>
+                    <p>Juan E. Cortés es ingeniero informático y actualmente trabaja como gerente en una empresa del Ibex 35. Desde muy joven sintió curiosidad por los mercados, pero pronto descubrió que la especulación no era su camino. Encontró en la inversión en dividendos una estrategia sólida y repetible para construir riqueza a largo plazo. En 2020, cansado de la falta de contenido riguroso en español, fundó el podcast <strong>"Héroes del Dividendo"</strong>, donde comparte su experiencia, análisis de empresas y consejos prácticos para crear una cartera de acciones que paguen dividendos crecientes.</p>
+                    <p>Su filosofía es clara: <strong>no se trata de hacerse rico rápido, sino de asegurar un flujo de caja que crezca cada año</strong>. Con más de 80.000 seguidores en Twitter y YouTube, su comunidad es un referente en el mundo de la inversión en dividendos en España. Su meta es alcanzar la independencia financiera a los 45 años y vivir únicamente de los dividendos que generan sus inversiones, sin tener que vender ni una sola acción. En su podcast entrevista a otros inversores, analiza balances y desgrana los secretos de las empresas que premian a sus accionistas con repartos constantes.</p>
+                    <div class="book-list">
+                        <strong>Recursos</strong>
+                        <ul>
+                            <li>Podcast: "Héroes del Dividendo" (disponible en Spotify, Apple Podcasts e iVoox)</li>
+                            <li>Newsletter semanal con análisis de empresas</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ CAREER ═══ -->
+    <section class="section section-alt" id="career">
+        <div class="container">
+            <div class="section-header">
+                <span class="label-sm">Trayectoria</span>
+            </div>
+            <div class="career-list">
+                <div class="career-item">
+                    <span class="career-year">2010</span>
+                    <span class="career-role">Ingeniero informático en sector tecnológico</span>
+                </div>
+                <div class="career-item">
+                    <span class="career-year">2015</span>
+                    <span class="career-role">Gerente de proyectos en empresa del Ibex 35</span>
+                </div>
+                <div class="career-item">
+                    <span class="career-year">2020</span>
+                    <span class="career-role">Fundador del podcast "Héroes del Dividendo"</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ WHY (actualizado: para principiantes y lista de acciones) ═══ -->
+    <section class="section" id="why">
+        <div class="container">
+            <div class="why-text">
+                <span class="label-sm">Para inversores principiantes</span>
+                <h2 class="heading-md">Descubre las <span style="color:#2563eb;">acciones con potencial</span> de subida</h2>
+                <p class="text-muted">Olvídate de análisis complejos. Te mostramos de forma sencilla cómo identificar oportunidades y <strong>recibir gratis nuestra lista de acciones alcistas</strong>.</p>
+            </div>
+            <div class="why-grid">
+                <div class="why-card">
+                    <div class="why-num">01</div>
+                    <h3>Aprende a identificar acciones con potencial</h3>
+                    <p>Descubre los criterios básicos para seleccionar empresas que pueden revalorizarse. <span class="highlight">Ideal para principiantes</span> sin experiencia previa.</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-num">02</div>
+                    <h3>Recibe gratis nuestra lista de acciones alcistas</h3>
+                    <p>Al unirte, obtendrás una selección de acciones con fundamentales sólidos y tendencia alcista. <span class="highlight">Actualizada cada semana</span>.</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-num">03</div>
+                    <h3>Actualización semanal para no perderte nada</h3>
+                    <p>Cada semana enviamos nuevas oportunidades y análisis para que estés siempre informado y <span class="highlight">aproveches las mejores entradas</span>.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ PATH (adaptado) ═══ -->
+    <section class="section section-alt" id="path">
+        <div class="container">
+            <div class="section-header">
+                <span class="label-sm">Hoja de ruta</span>
+                <h2 class="heading-md">De principiante a inversor en dividendos: <span style="color:#2563eb;">3 etapas</span></h2>
+                <p class="text-muted">Cada etapa te acerca más a tu objetivo de independencia financiera.</p>
+            </div>
+            <div class="curr-grid">
+                <div class="curr-card">
+                    <span class="curr-step">01 · Principiante</span>
+                    <h3>Conceptos básicos y mentalidad</h3>
+                    <p>Aprende qué son los dividendos, cómo se calculan y por qué son una fuente de ingresos pasiva y sostenible.</p>
+                    <span class="curr-tag">📖 Fundamentos</span>
+                </div>
+                <div class="curr-card">
+                    <span class="curr-step">02 · Intermedio</span>
+                    <h3>Selección de empresas y análisis</h3>
+                    <p>Domina los ratios clave (payout, rentabilidad por dividendo, crecimiento) y aprende a filtrar empresas de calidad.</p>
+                    <span class="curr-tag">🔍 Análisis</span>
+                </div>
+                <div class="curr-card">
+                    <span class="curr-step">03 · Avanzado</span>
+                    <h3>Gestión de cartera y reinversión</h3>
+                    <p>Crea tu propio sistema de reinversión, diversificación y seguimiento para maximizar el efecto compuesto.</p>
+                    <span class="curr-tag">🚀 Estrategia</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ METHOD (adaptado) ═══ -->
+    <section class="section" id="method">
+        <div class="container">
+            <div class="section-header">
+                <span class="label-sm">Caja de herramientas</span>
+                <h2 class="heading-md"><span style="color:#2563eb;">8</span> habilidades clave para el inversor en dividendos</h2>
+                <p class="text-muted">Conviértete en un experto en identificar empresas que te paguen cada año.</p>
+            </div>
+            <div class="method-grid">
+                <div class="mg"><h4>📊 Análisis de estados financieros</h4><p>Balance, cuenta de resultados y flujo de caja</p></div>
+                <div class="mg"><h4>📈 Ratios de dividendos</h4><p>Payout, rentabilidad, crecimiento histórico</p></div>
+                <div class="mg"><h4>💰 Valoración intrínseca</h4><p>Descuento de flujos, PER, etc.</p></div>
+                <div class="mg"><h4>🧠 Ventaja competitiva</h4><p>Identificar moats y barreras de entrada</p></div>
+                <div class="mg"><h4>📉 Gestión del riesgo</h4><p>Diversificación por sectores y países</p></div>
+                <div class="mg"><h4>🎯 Reinversión de dividendos</h4><p>Planes DRIP y reinversión manual</p></div>
+                <div class="mg"><h4>📋 Seguimiento de cartera</h4><p>Herramientas y métricas clave</p></div>
+                <div class="mg"><h4>⚖️ Psicología inversora</h4><p>Paciencia, disciplina y visión a largo plazo</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ OFFER ═══ -->
+    <section class="section" style="padding-top:0;" id="offer">
+        <div class="container">
+            <div class="section-header">
+                <span class="label-sm">Al unirte gratis ahora</span>
+                <h2 class="heading-md"><span style="color:#2563eb;">3</span> beneficios para empezar con buen pie</h2>
+                <p class="text-muted">Plazas limitadas · <strong>primeros en llegar</strong>. No te quedes fuera.</p>
+            </div>
+            <div class="benefit-cta">
+                <a href="javascript:void(0)" class="btn btn-primary" onclick="k2()">Contactar por WhatsApp</a>
+            </div>
+            <div class="benefit-grid">
+                <div class="b-card">
+                    <span class="ribbon">🔥 Esencial</span>
+                    <span class="b-num">01</span>
+                    <h3>‘Guía de empresas con dividendos estables’</h3>
+                    <p>Recibe un PDF con 20 empresas europeas y americanas con histórico de pagos crecientes y análisis clave.</p>
+                </div>
+                <div class="b-card">
+                    <span class="b-num">02</span>
+                    <h3>Sesión semanal de análisis de cartera</h3>
+                    <p>Cada semana analizamos en directo carteras reales, debatimos sobre nuevas posiciones y ajustamos estrategias.</p>
+                </div>
+                <div class="b-card">
+                    <span class="b-num">03</span>
+                    <h3>Comunidad privada con insights exclusivos</h3>
+                    <p>Accede a un canal privado donde Juan comparte su análisis de empresas, noticias relevantes y responde dudas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ CTA ═══ -->
+    <section class="cta-section" id="join">
+        <div class="container">
+            <span class="label-sm">Empieza ahora</span>
+            <h2 class="heading-md">Da el primer paso hacia tu <span style="color:#2563eb;">independencia financiera</span></h2>
+            <p class="text-muted">Únete a la comunidad de inversores en dividendos y empieza a construir tu futuro sin depender de un sueldo.</p>
+            <a href="javascript:void(0)" class="cta-kakao" onclick="k2()">Contactar por WhatsApp</a>
+            <p class="cta-note">※ Este contenido es educativo y de intercambio de información. No constituye asesoramiento financiero personalizado. Cada inversor debe tomar sus propias decisiones.</p>
+        </div>
+    </section>
+
+    <!-- ═══ FOOTER ═══ -->
+    <footer class="footer">
+        <div class="footer-block">
+            <span class="footer-brand">Juan E. Cortés</span>
+            <p>Ingeniero, gestor y fundador de "Héroes del Dividendo" — Tu viaje hacia la libertad financiera empieza aquí.</p>
+            <p class="copy">© 2026 Juan E. Cortés. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- ═══ FLOAT BAR ═══ -->
+    <div class="float-bar">
+        <div class="float-bar-inner">
+            <button onclick="k2()">Contactar por WhatsApp</button>
+        </div>
+    </div>
+
+    <!-- ═══ MODAL ═══ -->
+    <div class="modal-overlay" id="modalOverlay" onclick="closeModal(event)">
+        <div class="modal" onclick="event.stopPropagation()">
+            <button class="modal-close" onclick="closeModal()" aria-label="Cerrar">✕</button>
+            <div class="modal-title" id="modalTitle"></div>
+            <div class="modal-body" id="modalBody"></div>
+        </div>
+    </div>
+
+</div>
+
+<script>
+    // ── modal content ──
+    const modalData = {
+        disclaimer: {
+            title: 'Descargo de responsabilidad',
+            body: `
+                <p>El contenido de este sitio web se proporciona con fines educativos y de intercambio de información, y no pretende recomendar acciones específicas.</p>
+                <ol>
+                    <li><strong>Naturaleza de la información</strong><br />Todos los materiales proporcionados son información general de aprendizaje y no deben interpretarse como asesoramiento para situaciones específicas.</li>
+                    <li><strong>Limitación de responsabilidad</strong><br />El usuario asume toda la responsabilidad por el uso del servicio y las decisiones y resultados derivados del mismo.</li>
+                    <li><strong>Sin garantía de resultados</strong><br />La comunidad no garantiza ningún resultado y no se hace responsable de los daños derivados del uso de este contenido.</li>
+                    <li><strong>Enlaces externos</strong><br />No nos responsabilizamos del contenido de los enlaces a sitios externos.</li>
+                </ol>
+            `
+        },
+        terms: {
+            title: 'Términos de uso',
+            body: `
+                <p>Estos términos regulan las condiciones para el uso de los servicios de contenido educativo gratuito y la comunidad proporcionados por INSIGNITY.</p>
+                <ol>
+                    <li><strong>Artículo 1 (Propósito)</strong><br />Esta comunidad es una reunión sin fines de lucro para compartir educación e información sobre inversión en dividendos.</li>
+                    <li><strong>Artículo 2 (Uso)</strong><br />Los miembros pueden recibir materiales de aprendizaje de forma gratuita y participar en reuniones; los materiales proporcionados deben usarse solo con fines educativos.</li>
+                    <li><strong>Artículo 3 (Obligaciones de los miembros)</strong><br />Los miembros deben respetar los derechos de los demás y abstenerse de comportamientos que perturben el orden de la comunidad.</li>
+                    <li><strong>Artículo 4 (Naturaleza del contenido)</strong><br />Todo el contenido es para referencia educativa e informativa, no recomienda acciones específicas ni garantiza resultados.</li>
+                    <li><strong>Artículo 5 (Cambios en los términos)</strong><br />La comunidad puede modificar estos términos según sea necesario; los cambios se notificarán a través de esta página.</li>
+                </ol>
+            `
+        },
+        privacy: {
+            title: 'Política de privacidad',
+            body: `
+                <p>INSIGNITY (en adelante, "la comunidad") valora la privacidad de sus miembros y cumple con las leyes aplicables. Esta política explica la recopilación, uso y protección de la información personal.</p>
+                <ol>
+                    <li><strong>Datos recopilados</strong><br />Al registrarse, se recopila información mínima como nombre de usuario, contacto (ID de mensajería), etc., que solo se utiliza para la participación en el aprendizaje.</li>
+                    <li><strong>Propósito de uso</strong><br />Se utiliza para proporcionar materiales de aprendizaje, comunicar reuniones, responder consultas y operar la comunidad.</li>
+                    <li><strong>Conservación y eliminación</strong><br />La información se elimina inmediatamente después de cumplir su propósito o a solicitud del miembro, excepto cuando la ley exija un plazo específico.</li>
+                    <li><strong>Provisión a terceros</strong><br />No se proporciona información personal a terceros sin el consentimiento del miembro, excepto en casos de obligación legal.</li>
+                    <li><strong>Consultas</strong><br />Consultas sobre privacidad: <a href="mailto:support@insignity.com" style="color:#2563eb;text-decoration:underline;">support@insignity.com</a></li>
+                </ol>
+            `
+        }
+    };
+
+    // ── modal functions ──
+    function openModal(type) {
+        const overlay = document.getElementById('modalOverlay');
+        const title = document.getElementById('modalTitle');
+        const body = document.getElementById('modalBody');
+        const data = modalData[type];
+        if (!data) return;
+
+        title.textContent = data.title;
+        body.innerHTML = data.body;
+        overlay.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal(event) {
+        if (event && event.target !== event.currentTarget) return;
+        const overlay = document.getElementById('modalOverlay');
+        overlay.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') {
+            closeModal();
+        }
+    });
+</script>
+
+</body>
+</html>
